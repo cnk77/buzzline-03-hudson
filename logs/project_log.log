@@ -1,0 +1,821 @@
+2025-01-26 14:59:58.645 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-26 14:59:58.651 | INFO     | __main__:<module>:68 - Project root: C:\Projects\buzzline-03-hudson
+2025-01-26 14:59:58.651 | INFO     | __main__:<module>:72 - Data folder: C:\Projects\buzzline-03-hudson\data
+2025-01-26 14:59:58.653 | INFO     | __main__:<module>:76 - Data file: C:\Projects\buzzline-03-hudson\data\buzz.json
+2025-01-26 14:59:58.653 | INFO     | __main__:main:136 - START producer.
+2025-01-26 14:59:58.653 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-26 14:59:58.662 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-26 14:59:58.662 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-26 14:59:59.086 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1001, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '0tYYWic2TAGgwaxIz-6sIw', 'controller_id': 1001}
+2025-01-26 14:59:59.087 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-01-26 14:59:59.087 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-01-26 14:59:59.088 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-26 14:59:59.088 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-26 14:59:59.199 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-26 14:59:59.200 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-26 14:59:59.528 | INFO     | utils.utils_producer:create_kafka_topic:176 - Creating 'buzzline_json'.
+2025-01-26 15:00:00.459 | INFO     | utils.utils_producer:create_kafka_topic:181 - Topic 'buzzline_json' created successfully.
+2025-01-26 15:00:00.460 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-01-26 15:00:00.460 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-01-26 15:00:00.461 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Projects\buzzline-03-hudson\data\buzz.json
+2025-01-26 15:00:00.473 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Projects\buzzline-03-hudson\data\buzz.json
+2025-01-26 15:00:00.490 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-01-26 15:00:01.491 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-01-26 15:00:02.494 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-01-26 15:00:03.495 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-26 15:00:04.496 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-26 15:00:05.499 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-26 15:00:06.503 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-01-26 15:00:07.506 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:00:08.509 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-26 15:00:09.511 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-26 15:00:10.513 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-26 15:00:11.515 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-01-26 15:00:12.517 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Charlie'}
+2025-01-26 15:00:13.519 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-26 15:00:14.523 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-26 15:00:15.526 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:00:16.528 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-26 15:00:17.530 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-26 15:00:18.532 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-26 15:00:19.534 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-26 15:00:20.536 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-26 15:00:21.538 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-01-26 15:00:22.540 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-01-26 15:00:23.543 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-26 15:00:24.544 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-26 15:00:25.547 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-26 15:00:26.550 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-01-26 15:00:27.551 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-26 15:00:28.553 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Diana'}
+2025-01-26 15:00:29.557 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Alice'}
+2025-01-26 15:00:30.560 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Charlie'}
+2025-01-26 15:00:31.564 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-01-26 15:00:32.566 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-26 15:00:33.568 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:00:34.571 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Alice'}
+2025-01-26 15:00:35.574 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-26 15:00:36.578 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-01-26 15:00:37.583 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-01-26 15:00:38.586 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-01-26 15:00:39.588 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:00:40.590 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Alice'}
+2025-01-26 15:00:41.592 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Charlie'}
+2025-01-26 15:00:42.596 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:00:43.600 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-26 15:00:44.603 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:00:45.605 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-26 15:00:46.606 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Bob'}
+2025-01-26 15:00:46.824 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-26 15:00:46.831 | INFO     | __main__:main:124 - START consumer.
+2025-01-26 15:00:46.831 | INFO     | __main__:get_kafka_topic:46 - Kafka topic: buzzline_json
+2025-01-26 15:00:46.831 | INFO     | __main__:get_kafka_consumer_group_id:53 - Kafka consumer group id: buzz_group
+2025-01-26 15:00:46.832 | INFO     | __main__:main:129 - Consumer: Topic 'buzzline_json' and group 'buzz_group'...
+2025-01-26 15:00:46.832 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-26 15:00:46.832 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-01-26 15:00:46.959 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-01-26 15:00:46.960 | INFO     | __main__:main:135 - Polling messages from topic 'buzzline_json'...
+2025-01-26 15:00:47.610 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-01-26 15:00:48.613 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-01-26 15:00:49.647 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:00:50.654 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-01-26 15:00:51.662 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-26 15:00:52.308 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-01-26 15:00:52.308 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:00:52.308 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1}
+2025-01-26 15:00:52.309 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-01-26 15:00:52.309 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.309 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 1}
+2025-01-26 15:00:52.319 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-01-26 15:00:52.319 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:00:52.320 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 1, 'Charlie': 1}
+2025-01-26 15:00:52.322 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-26 15:00:52.322 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.323 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 2, 'Charlie': 1}
+2025-01-26 15:00:52.324 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-26 15:00:52.325 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.325 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 2, 'Charlie': 1, 'Diana': 1}
+2025-01-26 15:00:52.326 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-26 15:00:52.327 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.327 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 3, 'Charlie': 1, 'Diana': 1}
+2025-01-26 15:00:52.330 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-01-26 15:00:52.331 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.331 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-01-26 15:00:52.334 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:00:52.334 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:00:52.335 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 2, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-01-26 15:00:52.336 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-26 15:00:52.337 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:00:52.337 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-01-26 15:00:52.339 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-26 15:00:52.340 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.340 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 1, 'Diana': 2}
+2025-01-26 15:00:52.342 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-26 15:00:52.342 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.343 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 1, 'Diana': 3}
+2025-01-26 15:00:52.345 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-01-26 15:00:52.347 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.347 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 1, 'Diana': 4}
+2025-01-26 15:00:52.349 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Charlie'}
+2025-01-26 15:00:52.349 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:00:52.351 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 2, 'Diana': 4}
+2025-01-26 15:00:52.354 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-26 15:00:52.354 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:00:52.355 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Bob': 1}
+2025-01-26 15:00:52.357 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-26 15:00:52.357 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:00:52.358 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-26 15:00:52.359 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:00:52.360 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:00:52.360 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 4, 'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-26 15:00:52.361 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-26 15:00:52.362 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:00:52.363 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 5, 'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-26 15:00:52.365 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-26 15:00:52.366 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.367 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 5, 'Alice': 5, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-26 15:00:52.369 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-26 15:00:52.370 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.370 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 5, 'Alice': 6, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-26 15:00:52.372 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-26 15:00:52.373 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.374 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 5, 'Alice': 6, 'Charlie': 2, 'Diana': 5, 'Bob': 2}
+2025-01-26 15:00:52.376 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-26 15:00:52.376 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:00:52.377 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 2, 'Diana': 5, 'Bob': 2}
+2025-01-26 15:00:52.378 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-01-26 15:00:52.384 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:00:52.385 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Bob': 2}
+2025-01-26 15:00:52.386 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Bob'}
+2025-01-26 15:00:52.386 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:00:52.388 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Bob': 3}
+2025-01-26 15:00:52.389 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-26 15:00:52.390 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.390 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 7, 'Charlie': 3, 'Diana': 5, 'Bob': 3}
+2025-01-26 15:00:52.392 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-26 15:00:52.393 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.393 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 7, 'Charlie': 3, 'Diana': 6, 'Bob': 3}
+2025-01-26 15:00:52.395 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-26 15:00:52.395 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.396 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 7, 'Charlie': 3, 'Diana': 7, 'Bob': 3}
+2025-01-26 15:00:52.401 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-01-26 15:00:52.402 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:00:52.403 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 7, 'Charlie': 3, 'Diana': 7, 'Bob': 4}
+2025-01-26 15:00:52.406 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-26 15:00:52.406 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.407 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 7, 'Charlie': 3, 'Diana': 8, 'Bob': 4}
+2025-01-26 15:00:52.409 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Diana'}
+2025-01-26 15:00:52.409 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.410 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 7, 'Charlie': 3, 'Diana': 9, 'Bob': 4}
+2025-01-26 15:00:52.416 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Alice'}
+2025-01-26 15:00:52.418 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.419 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 8, 'Charlie': 3, 'Diana': 9, 'Bob': 4}
+2025-01-26 15:00:52.421 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Charlie'}
+2025-01-26 15:00:52.421 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:00:52.422 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 8, 'Charlie': 4, 'Diana': 9, 'Bob': 4}
+2025-01-26 15:00:52.424 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-01-26 15:00:52.425 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.425 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 8, 'Charlie': 4, 'Diana': 10, 'Bob': 4}
+2025-01-26 15:00:52.428 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-26 15:00:52.432 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:00:52.434 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 8, 'Charlie': 4, 'Diana': 10, 'Bob': 5}
+2025-01-26 15:00:52.437 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:00:52.437 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.438 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 8, 'Charlie': 4, 'Diana': 11, 'Bob': 5}
+2025-01-26 15:00:52.440 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Alice'}
+2025-01-26 15:00:52.440 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.440 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 9, 'Charlie': 4, 'Diana': 11, 'Bob': 5}
+2025-01-26 15:00:52.443 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-26 15:00:52.443 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.444 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 10, 'Charlie': 4, 'Diana': 11, 'Bob': 5}
+2025-01-26 15:00:52.446 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-01-26 15:00:52.453 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:00:52.455 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 10, 'Charlie': 5, 'Diana': 11, 'Bob': 5}
+2025-01-26 15:00:52.458 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-01-26 15:00:52.460 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:00:52.462 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 10, 'Charlie': 5, 'Diana': 11, 'Bob': 6}
+2025-01-26 15:00:52.467 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-01-26 15:00:52.468 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.469 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 10, 'Charlie': 5, 'Diana': 12, 'Bob': 6}
+2025-01-26 15:00:52.473 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:00:52.474 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.475 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 10, 'Charlie': 5, 'Diana': 13, 'Bob': 6}
+2025-01-26 15:00:52.487 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Alice'}
+2025-01-26 15:00:52.487 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.488 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 11, 'Charlie': 5, 'Diana': 13, 'Bob': 6}
+2025-01-26 15:00:52.491 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Charlie'}
+2025-01-26 15:00:52.491 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:00:52.492 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 11, 'Charlie': 6, 'Diana': 13, 'Bob': 6}
+2025-01-26 15:00:52.494 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:00:52.494 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.495 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 12, 'Charlie': 6, 'Diana': 13, 'Bob': 6}
+2025-01-26 15:00:52.498 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-26 15:00:52.499 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.500 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 12, 'Charlie': 6, 'Diana': 14, 'Bob': 6}
+2025-01-26 15:00:52.502 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:00:52.502 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.503 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 13, 'Charlie': 6, 'Diana': 14, 'Bob': 6}
+2025-01-26 15:00:52.504 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-26 15:00:52.505 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:00:52.506 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 13, 'Charlie': 6, 'Diana': 14, 'Bob': 7}
+2025-01-26 15:00:52.509 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Bob'}
+2025-01-26 15:00:52.509 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:00:52.511 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 13, 'Charlie': 6, 'Diana': 14, 'Bob': 8}
+2025-01-26 15:00:52.515 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-01-26 15:00:52.516 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:52.516 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 13, 'Charlie': 6, 'Diana': 15, 'Bob': 8}
+2025-01-26 15:00:52.518 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Bob'}
+2025-01-26 15:00:52.519 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:00:52.520 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 13, 'Charlie': 6, 'Diana': 15, 'Bob': 9}
+2025-01-26 15:00:52.525 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:00:52.526 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:00:52.527 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 7, 'Alice': 13, 'Charlie': 6, 'Diana': 15, 'Bob': 9}
+2025-01-26 15:00:52.530 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-01-26 15:00:52.532 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:00:52.534 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 7, 'Alice': 13, 'Charlie': 6, 'Diana': 15, 'Bob': 10}
+2025-01-26 15:00:52.537 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-26 15:00:52.541 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:52.542 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 7, 'Alice': 14, 'Charlie': 6, 'Diana': 15, 'Bob': 10}
+2025-01-26 15:00:52.667 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-01-26 15:00:52.675 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-01-26 15:00:52.675 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:00:52.676 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 14, 'Charlie': 6, 'Diana': 15, 'Bob': 10}
+2025-01-26 15:00:53.670 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:00:53.676 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:00:53.676 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:53.677 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 15, 'Charlie': 6, 'Diana': 15, 'Bob': 10}
+2025-01-26 15:00:54.675 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-26 15:00:54.683 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-26 15:00:54.685 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:00:54.686 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 15, 'Charlie': 6, 'Diana': 15, 'Bob': 11}
+2025-01-26 15:00:55.678 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-01-26 15:00:55.688 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-01-26 15:00:55.689 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:00:55.691 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 15, 'Charlie': 7, 'Diana': 15, 'Bob': 11}
+2025-01-26 15:00:56.680 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:00:56.692 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:00:56.693 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:00:56.693 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 15, 'Charlie': 7, 'Diana': 16, 'Bob': 11}
+2025-01-26 15:00:57.683 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Bob'}
+2025-01-26 15:00:57.695 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Bob'}
+2025-01-26 15:00:57.696 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:00:57.697 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 15, 'Charlie': 7, 'Diana': 16, 'Bob': 12}
+2025-01-26 15:00:58.687 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:00:58.702 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:00:58.703 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:58.704 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 16, 'Charlie': 7, 'Diana': 16, 'Bob': 12}
+2025-01-26 15:00:59.692 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-01-26 15:00:59.703 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-01-26 15:00:59.705 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:00:59.705 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 17, 'Charlie': 7, 'Diana': 16, 'Bob': 12}
+2025-01-26 15:01:00.695 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:01:00.708 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:01:00.709 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:00.710 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 17, 'Charlie': 7, 'Diana': 17, 'Bob': 12}
+2025-01-26 15:01:01.697 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-01-26 15:01:01.704 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-01-26 15:01:01.704 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:01:01.705 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 18, 'Charlie': 7, 'Diana': 17, 'Bob': 12}
+2025-01-26 15:01:02.699 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Diana'}
+2025-01-26 15:01:02.706 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Diana'}
+2025-01-26 15:01:02.707 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:02.707 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 18, 'Charlie': 7, 'Diana': 18, 'Bob': 12}
+2025-01-26 15:01:03.701 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Bob'}
+2025-01-26 15:01:03.707 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Bob'}
+2025-01-26 15:01:03.708 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:01:03.708 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 18, 'Charlie': 7, 'Diana': 18, 'Bob': 13}
+2025-01-26 15:01:04.704 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:01:04.711 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:01:04.711 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:04.712 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 18, 'Charlie': 7, 'Diana': 19, 'Bob': 13}
+2025-01-26 15:01:05.707 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:01:05.720 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:01:05.720 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:01:05.721 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 19, 'Charlie': 7, 'Diana': 19, 'Bob': 13}
+2025-01-26 15:01:06.711 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Eve'}
+2025-01-26 15:01:06.719 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Eve'}
+2025-01-26 15:01:06.720 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:06.720 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 19, 'Charlie': 7, 'Diana': 19, 'Bob': 13}
+2025-01-26 15:01:07.719 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:01:07.725 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:01:07.725 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:07.725 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 19, 'Charlie': 7, 'Diana': 20, 'Bob': 13}
+2025-01-26 15:01:08.722 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-01-26 15:01:08.797 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-01-26 15:01:08.797 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:01:08.798 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 19, 'Charlie': 8, 'Diana': 20, 'Bob': 13}
+2025-01-26 15:01:09.724 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-01-26 15:01:09.732 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-01-26 15:01:09.733 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:01:09.733 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 19, 'Charlie': 9, 'Diana': 20, 'Bob': 13}
+2025-01-26 15:01:10.746 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-01-26 15:01:10.896 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-01-26 15:01:10.897 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:01:10.898 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 20, 'Charlie': 9, 'Diana': 20, 'Bob': 13}
+2025-01-26 15:01:11.762 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-01-26 15:01:11.769 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-01-26 15:01:11.771 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:11.772 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 20, 'Charlie': 9, 'Diana': 21, 'Bob': 13}
+2025-01-26 15:01:12.813 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Bob'}
+2025-01-26 15:01:12.814 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:01:12.815 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 20, 'Charlie': 9, 'Diana': 21, 'Bob': 14}
+2025-01-26 15:01:12.790 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Bob'}
+2025-01-26 15:01:13.824 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-26 15:01:13.848 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-26 15:01:13.850 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:13.851 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 10, 'Alice': 20, 'Charlie': 9, 'Diana': 21, 'Bob': 14}
+2025-01-26 15:01:14.827 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-01-26 15:01:14.835 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-01-26 15:01:14.836 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:01:14.837 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 10, 'Alice': 20, 'Charlie': 10, 'Diana': 21, 'Bob': 14}
+2025-01-26 15:01:15.830 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Charlie'}
+2025-01-26 15:01:15.844 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Charlie'}
+2025-01-26 15:01:15.846 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:01:15.848 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 10, 'Alice': 20, 'Charlie': 11, 'Diana': 21, 'Bob': 14}
+2025-01-26 15:01:16.833 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Charlie'}
+2025-01-26 15:01:16.843 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Charlie'}
+2025-01-26 15:01:16.844 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:01:16.845 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 10, 'Alice': 20, 'Charlie': 12, 'Diana': 21, 'Bob': 14}
+2025-01-26 15:01:17.836 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Diana'}
+2025-01-26 15:01:17.844 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Diana'}
+2025-01-26 15:01:17.845 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:17.845 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 10, 'Alice': 20, 'Charlie': 12, 'Diana': 22, 'Bob': 14}
+2025-01-26 15:01:18.863 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-01-26 15:01:18.928 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-01-26 15:01:18.930 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:18.931 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 10, 'Alice': 20, 'Charlie': 12, 'Diana': 23, 'Bob': 14}
+2025-01-26 15:01:19.865 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-01-26 15:01:19.876 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-01-26 15:01:19.877 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:19.878 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 11, 'Alice': 20, 'Charlie': 12, 'Diana': 23, 'Bob': 14}
+2025-01-26 15:01:20.881 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Eve'}
+e'}
+2025-01-26 15:01:21.150 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:21.151 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 12, 'Alice': 20, 'Charlie': 12, 'Diana': 23, 'Bob': 14}
+2025-01-26 15:01:22.151 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-26 15:01:22.162 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-26 15:01:22.163 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:22.164 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 13, 'Alice': 20, 'Charlie': 12, 'Diana': 23, 'Bob': 14}
+2025-01-26 15:01:23.155 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Alice'}
+2025-01-26 15:01:23.457 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:01:23.458 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 13, 'Alice': 21, 'Charlie': 12, 'Diana': 23, 'Bob': 14}
+2025-01-26 15:01:24.460 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-26 15:01:24.468 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-26 15:01:24.469 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:01:24.471 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 13, 'Alice': 21, 'Charlie': 12, 'Diana': 23, 'Bob': 15}
+2025-01-26 15:01:25.462 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-26 15:01:25.466 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-26 15:01:25.466 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:01:25.467 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 13, 'Alice': 21, 'Charlie': 12, 'Diana': 23, 'Bob': 16}
+2025-01-26 15:01:26.464 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:01:26.471 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:01:26.472 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:26.473 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 21, 'Charlie': 12, 'Diana': 23, 'Bob': 16}
+2025-01-26 15:01:27.468 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-26 15:01:27.475 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-26 15:01:27.477 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:01:27.477 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 22, 'Charlie': 12, 'Diana': 23, 'Bob': 16}
+2025-01-26 15:01:28.472 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-26 15:01:28.479 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-26 15:01:28.482 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:28.483 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 22, 'Charlie': 12, 'Diana': 24, 'Bob': 16}
+2025-01-26 15:01:29.475 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-01-26 15:01:29.488 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-01-26 15:01:29.490 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:29.491 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 15, 'Alice': 22, 'Charlie': 12, 'Diana': 24, 'Bob': 16}
+2025-01-26 15:01:30.478 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-01-26 15:01:30.491 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-01-26 15:01:30.493 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:01:30.494 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 15, 'Alice': 22, 'Charlie': 13, 'Diana': 24, 'Bob': 16}
+2025-01-26 15:01:31.479 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-26 15:01:31.488 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-26 15:01:31.489 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:31.489 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 16, 'Alice': 22, 'Charlie': 13, 'Diana': 24, 'Bob': 16}
+2025-01-26 15:01:32.482 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Diana'}
+2025-01-26 15:01:32.492 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Diana'}
+2025-01-26 15:01:32.493 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:32.494 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 16, 'Alice': 22, 'Charlie': 13, 'Diana': 25, 'Bob': 16}
+2025-01-26 15:01:33.485 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-01-26 15:01:33.495 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-01-26 15:01:33.495 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:01:33.498 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 16, 'Alice': 22, 'Charlie': 14, 'Diana': 25, 'Bob': 16}
+2025-01-26 15:01:34.491 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Charlie'}
+2025-01-26 15:01:34.539 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Charlie'}
+2025-01-26 15:01:34.541 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:01:34.542 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 16, 'Alice': 22, 'Charlie': 15, 'Diana': 25, 'Bob': 16}
+2025-01-26 15:01:35.505 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-01-26 15:01:35.522 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-01-26 15:01:35.525 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:01:35.543 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 16, 'Alice': 22, 'Charlie': 15, 'Diana': 25, 'Bob': 17}
+2025-01-26 15:01:36.509 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:01:36.521 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:01:36.522 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:36.523 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 17, 'Alice': 22, 'Charlie': 15, 'Diana': 25, 'Bob': 17}
+2025-01-26 15:01:37.518 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-26 15:01:37.629 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-26 15:01:37.630 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:37.631 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 17, 'Alice': 22, 'Charlie': 15, 'Diana': 26, 'Bob': 17}
+2025-01-26 15:01:38.533 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-26 15:01:38.548 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-26 15:01:38.550 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:01:38.550 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 17, 'Alice': 23, 'Charlie': 15, 'Diana': 26, 'Bob': 17}
+2025-01-26 15:01:39.537 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Diana'}
+2025-01-26 15:01:39.547 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Diana'}
+2025-01-26 15:01:39.548 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:39.549 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 17, 'Alice': 23, 'Charlie': 15, 'Diana': 27, 'Bob': 17}
+2025-01-26 15:01:40.542 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-26 15:01:40.552 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-26 15:01:40.554 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:01:40.555 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 17, 'Alice': 24, 'Charlie': 15, 'Diana': 27, 'Bob': 17}
+2025-01-26 15:01:41.544 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Projects\buzzline-03-hudson\data\buzz.json
+2025-01-26 15:01:41.545 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Projects\buzzline-03-hudson\data\buzz.json
+2025-01-26 15:01:41.547 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-01-26 15:01:41.552 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-01-26 15:01:41.554 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:41.555 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 18, 'Alice': 24, 'Charlie': 15, 'Diana': 27, 'Bob': 17}
+2025-01-26 15:01:42.549 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-01-26 15:01:42.556 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-01-26 15:01:42.557 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:01:42.558 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 18, 'Alice': 25, 'Charlie': 15, 'Diana': 27, 'Bob': 17}
+2025-01-26 15:01:43.552 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-01-26 15:01:43.559 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-01-26 15:01:43.560 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:01:43.561 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 18, 'Alice': 25, 'Charlie': 16, 'Diana': 27, 'Bob': 17}
+2025-01-26 15:01:44.554 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-26 15:01:44.561 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-26 15:01:44.562 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:01:44.562 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 18, 'Alice': 26, 'Charlie': 16, 'Diana': 27, 'Bob': 17}
+2025-01-26 15:01:45.558 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-26 15:01:45.570 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-26 15:01:45.571 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:45.572 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 18, 'Alice': 26, 'Charlie': 16, 'Diana': 28, 'Bob': 17}
+2025-01-26 15:01:46.632 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-26 15:01:46.799 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-26 15:01:46.801 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:01:46.802 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 18, 'Alice': 27, 'Charlie': 16, 'Diana': 28, 'Bob': 17}
+2025-01-26 15:01:47.669 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-01-26 15:01:47.796 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-01-26 15:01:47.800 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:47.804 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 18, 'Alice': 27, 'Charlie': 16, 'Diana': 29, 'Bob': 17}
+2025-01-26 15:01:48.781 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:01:48.797 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:01:48.799 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:48.800 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 19, 'Alice': 27, 'Charlie': 16, 'Diana': 29, 'Bob': 17}
+2025-01-26 15:01:49.813 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-26 15:01:49.825 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-26 15:01:49.826 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:49.827 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 20, 'Alice': 27, 'Charlie': 16, 'Diana': 29, 'Bob': 17}
+2025-01-26 15:01:50.873 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-26 15:01:50.891 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-26 15:01:50.892 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:01:50.893 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 20, 'Alice': 28, 'Charlie': 16, 'Diana': 29, 'Bob': 17}
+2025-01-26 15:01:51.877 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-26 15:01:51.888 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-26 15:01:51.891 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:51.892 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 20, 'Alice': 28, 'Charlie': 16, 'Diana': 30, 'Bob': 17}
+2025-01-26 15:01:52.880 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-01-26 15:01:52.890 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-01-26 15:01:52.892 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:01:52.893 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 20, 'Alice': 28, 'Charlie': 16, 'Diana': 31, 'Bob': 17}
+2025-01-26 15:01:53.882 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Charlie'}
+2025-01-26 15:01:53.893 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Charlie'}
+2025-01-26 15:01:53.894 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:01:53.895 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 20, 'Alice': 28, 'Charlie': 17, 'Diana': 31, 'Bob': 17}
+2025-01-26 15:01:54.886 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-26 15:01:54.897 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-26 15:01:54.898 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:01:54.899 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 20, 'Alice': 28, 'Charlie': 17, 'Diana': 31, 'Bob': 18}
+2025-01-26 15:01:55.888 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-26 15:01:55.901 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-26 15:01:55.902 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:01:55.903 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 20, 'Alice': 28, 'Charlie': 17, 'Diana': 31, 'Bob': 19}
+2025-01-26 15:01:56.891 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:01:56.901 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:01:56.902 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:56.902 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 21, 'Alice': 28, 'Charlie': 17, 'Diana': 31, 'Bob': 19}
+2025-01-26 15:01:57.894 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-26 15:01:57.905 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-26 15:01:57.906 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:01:57.907 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 22, 'Alice': 28, 'Charlie': 17, 'Diana': 31, 'Bob': 19}
+2025-01-26 15:01:58.898 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-26 15:01:58.911 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-26 15:01:58.912 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:01:58.913 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 22, 'Alice': 29, 'Charlie': 17, 'Diana': 31, 'Bob': 19}
+2025-01-26 15:01:59.906 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-26 15:01:59.918 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-26 15:01:59.921 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:01:59.922 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 22, 'Alice': 30, 'Charlie': 17, 'Diana': 31, 'Bob': 19}
+2025-01-26 15:02:00.911 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-26 15:02:00.926 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-26 15:02:00.927 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:02:00.929 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 22, 'Alice': 30, 'Charlie': 17, 'Diana': 32, 'Bob': 19}
+2025-01-26 15:02:01.914 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-26 15:02:01.933 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-26 15:02:01.934 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:02:01.935 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 30, 'Charlie': 17, 'Diana': 32, 'Bob': 19}
+2025-01-26 15:02:02.934 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-01-26 15:02:02.945 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-01-26 15:02:02.946 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:02:02.948 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 30, 'Charlie': 18, 'Diana': 32, 'Bob': 19}
+2025-01-26 15:02:03.939 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-01-26 15:02:03.947 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Bob'}
+2025-01-26 15:02:03.947 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:02:03.948 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 30, 'Charlie': 18, 'Diana': 32, 'Bob': 20}
+2025-01-26 15:02:04.942 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-26 15:02:04.949 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-26 15:02:04.949 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:02:04.951 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 31, 'Charlie': 18, 'Diana': 32, 'Bob': 20}
+2025-01-26 15:02:05.946 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-26 15:02:05.955 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-26 15:02:05.956 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:02:05.956 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 31, 'Charlie': 18, 'Diana': 33, 'Bob': 20}
+2025-01-26 15:02:06.954 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-26 15:02:06.974 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-26 15:02:06.974 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:02:06.976 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 31, 'Charlie': 18, 'Diana': 34, 'Bob': 20}
+2025-01-26 15:02:07.961 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-01-26 15:02:07.978 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-01-26 15:02:07.978 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:02:07.979 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 31, 'Charlie': 18, 'Diana': 34, 'Bob': 21}
+2025-01-26 15:02:08.972 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-26 15:02:08.991 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-26 15:02:08.992 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:02:08.993 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 31, 'Charlie': 18, 'Diana': 35, 'Bob': 21}
+2025-01-26 15:02:09.979 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Diana'}
+2025-01-26 15:02:09.987 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Diana'}
+2025-01-26 15:02:09.988 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:02:09.988 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 31, 'Charlie': 18, 'Diana': 36, 'Bob': 21}
+2025-01-26 15:02:10.985 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Alice'}
+2025-01-26 15:02:10.996 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Alice'}
+2025-01-26 15:02:10.997 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:02:10.997 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 32, 'Charlie': 18, 'Diana': 36, 'Bob': 21}
+2025-01-26 15:02:11.990 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Charlie'}
+2025-01-26 15:02:12.000 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Charlie'}
+2025-01-26 15:02:12.000 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:02:12.001 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 32, 'Charlie': 19, 'Diana': 36, 'Bob': 21}
+2025-01-26 15:02:12.995 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-01-26 15:02:13.007 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-01-26 15:02:13.008 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:02:13.008 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 32, 'Charlie': 19, 'Diana': 37, 'Bob': 21}
+2025-01-26 15:02:14.003 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-26 15:02:14.013 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-26 15:02:14.014 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:02:14.014 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 32, 'Charlie': 19, 'Diana': 37, 'Bob': 22}
+2025-01-26 15:02:15.049 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:02:15.136 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:02:15.137 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:02:15.138 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 32, 'Charlie': 19, 'Diana': 38, 'Bob': 22}
+2025-01-26 15:02:16.096 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Alice'}
+2025-01-26 15:02:16.211 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Alice'}
+2025-01-26 15:02:16.212 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:02:16.213 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 33, 'Charlie': 19, 'Diana': 38, 'Bob': 22}
+2025-01-26 15:02:17.109 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-26 15:02:17.120 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-26 15:02:17.120 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:02:17.121 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 34, 'Charlie': 19, 'Diana': 38, 'Bob': 22}
+2025-01-26 15:02:18.149 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-01-26 15:02:18.173 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-01-26 15:02:18.178 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:02:18.179 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 34, 'Charlie': 20, 'Diana': 38, 'Bob': 22}
+2025-01-26 15:02:19.165 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-01-26 15:02:19.176 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-01-26 15:02:19.177 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:02:19.178 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 34, 'Charlie': 20, 'Diana': 38, 'Bob': 23}
+2025-01-26 15:02:20.171 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-01-26 15:02:20.186 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-01-26 15:02:20.187 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:02:20.188 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 34, 'Charlie': 20, 'Diana': 39, 'Bob': 23}
+2025-01-26 15:02:21.176 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:02:21.184 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:02:21.185 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:02:21.185 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 34, 'Charlie': 20, 'Diana': 40, 'Bob': 23}
+2025-01-26 15:02:22.180 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Alice'}
+2025-01-26 15:02:22.186 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I love Python!', 'author': 'Alice'}
+2025-01-26 15:02:22.186 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:02:22.187 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 35, 'Charlie': 20, 'Diana': 40, 'Bob': 23}
+2025-01-26 15:02:23.183 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Charlie'}
+2025-01-26 15:02:23.196 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Charlie'}
+2025-01-26 15:02:23.196 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:02:23.197 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 35, 'Charlie': 21, 'Diana': 40, 'Bob': 23}
+2025-01-26 15:02:24.188 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:02:24.196 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:02:24.198 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:02:24.198 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 36, 'Charlie': 21, 'Diana': 40, 'Bob': 23}
+2025-01-26 15:02:25.197 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-26 15:02:25.205 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-26 15:02:25.206 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:02:25.207 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 36, 'Charlie': 21, 'Diana': 41, 'Bob': 23}
+2025-01-26 15:02:26.286 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:02:26.298 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:02:26.299 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:02:26.301 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 37, 'Charlie': 21, 'Diana': 41, 'Bob': 23}
+2025-01-26 15:02:27.294 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-26 15:02:27.304 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-26 15:02:27.305 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:02:27.305 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 37, 'Charlie': 21, 'Diana': 41, 'Bob': 24}
+2025-01-26 15:02:28.298 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Bob'}
+2025-01-26 15:02:28.312 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Bob'}
+2025-01-26 15:02:28.312 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:02:28.313 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 37, 'Charlie': 21, 'Diana': 41, 'Bob': 25}
+2025-01-26 15:02:29.303 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-01-26 15:02:29.318 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-01-26 15:02:29.321 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-26 15:02:29.322 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 37, 'Charlie': 21, 'Diana': 42, 'Bob': 25}
+2025-01-26 15:02:30.314 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-01-26 15:02:30.338 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Bob'}
+2025-01-26 15:02:30.343 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:02:30.344 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 23, 'Alice': 37, 'Charlie': 21, 'Diana': 42, 'Bob': 26}
+2025-01-26 15:02:31.318 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:02:31.329 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-26 15:02:31.330 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:02:31.331 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 24, 'Alice': 37, 'Charlie': 21, 'Diana': 42, 'Bob': 26}
+2025-01-26 15:02:32.323 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-01-26 15:02:32.333 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-01-26 15:02:32.334 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:02:32.334 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 24, 'Alice': 37, 'Charlie': 21, 'Diana': 42, 'Bob': 27}
+2025-01-26 15:02:33.330 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-26 15:02:33.338 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-26 15:02:33.338 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:02:33.339 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 24, 'Alice': 38, 'Charlie': 21, 'Diana': 42, 'Bob': 27}
+2025-01-26 15:02:34.346 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-01-26 15:02:34.365 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-01-26 15:02:34.366 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-26 15:02:34.366 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 25, 'Alice': 38, 'Charlie': 21, 'Diana': 42, 'Bob': 27}
+2025-01-26 15:02:35.353 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:02:35.361 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-26 15:02:35.361 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-26 15:02:35.362 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 25, 'Alice': 39, 'Charlie': 21, 'Diana': 42, 'Bob': 27}
+2025-01-26 15:02:36.374 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-26 15:02:36.386 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-26 15:02:36.387 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-26 15:02:36.388 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 25, 'Alice': 39, 'Charlie': 21, 'Diana': 42, 'Bob': 28}
+2025-01-26 15:02:37.396 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-01-26 15:02:37.412 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-01-26 15:02:37.413 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-26 15:02:37.413 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 25, 'Alice': 39, 'Charlie': 22, 'Diana': 42, 'Bob': 28}
+2025-01-26 15:02:38.402 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-26 15:02:38.413 | WARNING  | __main__:main:142 - Consumer interrupted by user.
+2025-01-26 15:02:38.659 | INFO     | __main__:main:147 - Kafka consumer for topic 'buzzline_json' closed.
+2025-01-26 15:02:38.661 | INFO     | __main__:main:149 - END consumer for topic 'buzzline_json' and group 'buzz_group'.
+2025-01-26 15:02:39.407 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Bob'}
+2025-01-26 15:02:39.953 | WARNING  | __main__:main:173 - Producer interrupted by user.
+2025-01-26 15:02:39.968 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-01-26 15:02:39.977 | INFO     | __main__:main:180 - END producer.
+2025-01-26 15:38:29.550 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-26 15:38:29.563 | INFO     | __main__:<module>:66 - Project root: C:\Projects\buzzline-03-hudson
+2025-01-26 15:38:29.572 | INFO     | __main__:<module>:70 - Data folder: C:\Projects\buzzline-03-hudson\data
+2025-01-26 15:38:29.575 | INFO     | __main__:<module>:74 - Data file: C:\Projects\buzzline-03-hudson\data\smoker_temps.csv
+2025-01-26 15:38:29.576 | INFO     | __main__:main:134 - START producer.
+2025-01-26 15:38:29.583 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-26 15:38:29.645 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-26 15:38:29.650 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-26 15:38:30.286 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1001, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '0tYYWic2TAGgwaxIz-6sIw', 'controller_id': 1001}
+2025-01-26 15:38:30.289 | INFO     | __main__:get_kafka_topic:48 - Kafka topic: smoker_csv
+2025-01-26 15:38:30.290 | INFO     | __main__:get_message_interval:55 - Message interval: 5 seconds
+2025-01-26 15:38:30.291 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-26 15:38:30.291 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-26 15:38:30.408 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-26 15:38:30.409 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-26 15:38:30.759 | INFO     | utils.utils_producer:create_kafka_topic:176 - Creating 'smoker_csv'.
+2025-01-26 15:38:31.275 | INFO     | utils.utils_producer:create_kafka_topic:181 - Topic 'smoker_csv' created successfully.
+2025-01-26 15:38:31.276 | INFO     | __main__:main:157 - Kafka topic 'smoker_csv' is ready.
+2025-01-26 15:38:31.277 | INFO     | __main__:main:163 - Starting message production to topic 'smoker_csv'...
+2025-01-26 15:38:31.277 | INFO     | __main__:generate_messages:93 - Opening data file in read mode: C:\Projects\buzzline-03-hudson\data\smoker_temps.csv
+2025-01-26 15:38:31.297 | INFO     | __main__:generate_messages:95 - Reading data from file: C:\Projects\buzzline-03-hudson\data\smoker_temps.csv
+2025-01-26 15:38:31.308 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:38:31.298527', 'temperature': 70.4}
+2025-01-26 15:38:36.311 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:38:36.310693', 'temperature': 70.8}
+2025-01-26 15:38:41.316 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:38:41.313985', 'temperature': 71.2}
+2025-01-26 15:38:46.320 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:38:46.319002', 'temperature': 71.6}
+2025-01-26 15:38:51.322 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:38:51.321820', 'temperature': 72.0}
+2025-01-26 15:38:56.324 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:38:56.323754', 'temperature': 72.4}
+2025-01-26 15:39:01.328 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:39:01.326121', 'temperature': 72.8}
+2025-01-26 15:39:06.330 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:39:06.329964', 'temperature': 73.2}
+2025-01-26 15:39:11.333 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:39:11.332337', 'temperature': 73.6}
+2025-01-26 15:39:16.336 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:39:16.335598', 'temperature': 74.0}
+2025-01-26 15:39:20.681 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-26 15:39:20.689 | INFO     | __main__:main:162 - START consumer.
+2025-01-26 15:39:20.690 | INFO     | __main__:get_kafka_topic:46 - Kafka topic: smoker_csv
+2025-01-26 15:39:20.690 | INFO     | __main__:get_kafka_consumer_group_id:53 - Kafka consumer group id: smoker_group
+2025-01-26 15:39:20.691 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:20.691 | INFO     | __main__:main:168 - Consumer: Topic 'smoker_csv' and group 'smoker_group'...
+2025-01-26 15:39:20.691 | INFO     | __main__:main:169 - Rolling window size: 10
+2025-01-26 15:39:20.692 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-26 15:39:20.692 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='smoker_csv' and group ID='smoker_group'.
+2025-01-26 15:39:20.818 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-01-26 15:39:20.819 | INFO     | __main__:main:177 - Polling messages from topic 'smoker_csv'...
+2025-01-26 15:39:21.148 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:38:31.298527', 'temperature': 70.4}
+2025-01-26 15:39:21.149 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:21.152 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:38:36.310693', 'temperature': 70.8}
+2025-01-26 15:39:21.153 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:21.157 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:38:41.313985', 'temperature': 71.2}
+2025-01-26 15:39:21.158 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:21.162 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:38:46.319002', 'temperature': 71.6}
+2025-01-26 15:39:21.163 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:21.165 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:38:51.321820', 'temperature': 72.0}
+2025-01-26 15:39:21.166 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:21.168 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:38:56.323754', 'temperature': 72.4}
+2025-01-26 15:39:21.170 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:21.174 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:39:01.326121', 'temperature': 72.8}
+2025-01-26 15:39:21.175 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:21.178 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:39:06.329964', 'temperature': 73.2}
+2025-01-26 15:39:21.178 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:21.181 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:39:11.332337', 'temperature': 73.6}
+2025-01-26 15:39:21.181 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:21.183 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:39:16.335598', 'temperature': 74.0}
+2025-01-26 15:39:21.184 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:21.185 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:39:21.340 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:39:21.338033', 'temperature': 74.4}
+2025-01-26 15:39:21.347 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:39:21.338033', 'temperature': 74.4}
+2025-01-26 15:39:21.348 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:21.348 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:39:26.343 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:39:26.342178', 'temperature': 74.8}
+2025-01-26 15:39:26.353 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:39:26.342178', 'temperature': 74.8}
+2025-01-26 15:39:26.354 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:26.354 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:39:31.346 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:39:31.345239', 'temperature': 75.2}
+2025-01-26 15:39:31.360 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:39:31.345239', 'temperature': 75.2}
+2025-01-26 15:39:31.364 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:31.368 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:39:36.347 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:39:36.347987', 'temperature': 75.6}
+2025-01-26 15:39:36.361 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:39:36.347987', 'temperature': 75.6}
+2025-01-26 15:39:36.363 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:36.365 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:39:41.353 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:39:41.350963', 'temperature': 76.0}
+2025-01-26 15:39:41.369 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:39:41.350963', 'temperature': 76.0}
+2025-01-26 15:39:41.372 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:41.375 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:39:46.358 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:39:46.356540', 'temperature': 76.4}
+2025-01-26 15:39:46.368 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:39:46.356540', 'temperature': 76.4}
+2025-01-26 15:39:46.369 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:46.371 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:39:51.360 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:39:51.360210', 'temperature': 76.8}
+2025-01-26 15:39:51.370 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:39:51.360210', 'temperature': 76.8}
+2025-01-26 15:39:51.373 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:51.374 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:39:56.363 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:39:56.362819', 'temperature': 77.2}
+2025-01-26 15:39:56.388 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:39:56.362819', 'temperature': 77.2}
+2025-01-26 15:39:56.390 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:39:56.392 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:40:01.487 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:40:01.385221', 'temperature': 77.6}
+2025-01-26 15:40:01.408 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:40:01.385221', 'temperature': 77.6}
+2025-01-26 15:40:01.489 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:40:01.492 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:40:06.505 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:40:06.492289', 'temperature': 78.0}
+2025-01-26 15:40:06.525 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:40:06.492289', 'temperature': 78.0}
+2025-01-26 15:40:06.528 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:40:06.529 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:40:11.543 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:40:11.516590', 'temperature': 78.4}
+2025-01-26 15:40:11.578 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:40:11.516590', 'temperature': 78.4}
+2025-01-26 15:40:11.581 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:40:11.584 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:40:16.549 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:40:16.548122', 'temperature': 78.8}
+2025-01-26 15:40:16.566 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:40:16.548122', 'temperature': 78.8}
+2025-01-26 15:40:16.569 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:40:16.570 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:40:21.551 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:40:21.551098', 'temperature': 79.2}
+2025-01-26 15:40:21.561 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:40:21.551098', 'temperature': 79.2}
+2025-01-26 15:40:21.563 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:40:21.564 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:40:26.554 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:40:26.553598', 'temperature': 79.6}
+2025-01-26 15:40:26.567 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:40:26.553598', 'temperature': 79.6}
+2025-01-26 15:40:26.571 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:40:26.575 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:40:31.577 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:40:31.563785', 'temperature': 80.0}
+2025-01-26 15:40:31.596 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:40:31.563785', 'temperature': 80.0}
+2025-01-26 15:40:31.599 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:40:31.600 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:40:36.588 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:40:36.580817', 'temperature': 80.4}
+2025-01-26 15:40:36.608 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:40:36.580817', 'temperature': 80.4}
+2025-01-26 15:40:36.609 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:40:36.610 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:40:41.605 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:40:41.600658', 'temperature': 80.8}
+2025-01-26 15:40:41.611 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:40:41.600658', 'temperature': 80.8}
+2025-01-26 15:40:41.613 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:40:41.613 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:40:46.610 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:40:46.608456', 'temperature': 81.2}
+2025-01-26 15:40:46.635 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:40:46.608456', 'temperature': 81.2}
+2025-01-26 15:40:46.636 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:40:46.636 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:40:51.618 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:40:51.616944', 'temperature': 81.6}
+2025-01-26 15:40:51.623 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:40:51.616944', 'temperature': 81.6}
+2025-01-26 15:40:51.624 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:40:51.624 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:40:56.628 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:40:56.624949', 'temperature': 82.0}
+2025-01-26 15:40:56.665 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:40:56.624949', 'temperature': 82.0}
+2025-01-26 15:40:56.666 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:40:56.667 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:41:01.644 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:41:01.637267', 'temperature': 82.4}
+2025-01-26 15:41:01.659 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:41:01.637267', 'temperature': 82.4}
+2025-01-26 15:41:01.659 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:41:01.661 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:41:06.652 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:41:06.648561', 'temperature': 82.8}
+2025-01-26 15:41:06.813 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-26T21:41:06.648561', 'temperature': 82.8}
+2025-01-26 15:41:06.815 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-26 15:41:06.816 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-26 15:41:08.368 | WARNING  | __main__:main:184 - Consumer interrupted by user.
+2025-01-26 15:41:08.462 | INFO     | __main__:main:189 - Kafka consumer for topic 'smoker_csv' closed.
+2025-01-26 15:41:11.657 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:41:11.655346', 'temperature': 83.2}
+2025-01-26 15:41:16.660 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-26T21:41:16.660163', 'temperature': 83.6}
+2025-01-26 15:41:18.870 | WARNING  | __main__:main:170 - Producer interrupted by user.
+2025-01-26 15:41:18.881 | INFO     | __main__:main:175 - Kafka producer closed.
+2025-01-26 15:41:18.881 | INFO     | __main__:main:177 - END producer.
