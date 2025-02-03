@@ -6,10 +6,10 @@ Consume json messages from a Kafka topic and process them.
 JSON is a set of key:value pairs. 
 
 Example serialized Kafka message
-"{\"message\": \"I love Python!\", \"author\": \"Eve\"}"
+"{\"message\": \"This game is boring.\", \"author\": \"Erin\"}"
 
 Example JSON message (after deserialization) to be analyzed
-{"message": "I love Python!", "author": "Eve"}
+{"message": "This game is boring.", "author": "Erin"}
 
 """
 
@@ -71,6 +71,8 @@ author_counts = defaultdict(int)
 # #####################################
 
 
+from textblob import TextBlob
+
 def process_message(message: str) -> None:
     """
     Process a single JSON message from Kafka.
@@ -99,6 +101,12 @@ def process_message(message: str) -> None:
 
             # Log the updated counts
             logger.info(f"Updated author counts: {dict(author_counts)}")
+
+            # Perform sentiment analysis on the message
+            message_text = message_dict.get("message", "")
+            sentiment = TextBlob(message_text).sentiment
+            logger.info(f"Sentiment analysis - Polarity: {sentiment.polarity}, Subjectivity: {sentiment.subjectivity}")
+
         else:
             logger.error(f"Expected a dictionary but got: {type(message_dict)}")
 
@@ -106,6 +114,7 @@ def process_message(message: str) -> None:
         logger.error(f"Invalid JSON message: {message}")
     except Exception as e:
         logger.error(f"Error processing message: {e}")
+
 
 
 #####################################

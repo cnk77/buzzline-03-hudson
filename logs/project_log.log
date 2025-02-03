@@ -1030,3 +1030,762 @@ e'}
 2025-02-02 19:24:36.103 | WARNING  | __main__:main:173 - Producer interrupted by user.
 2025-02-02 19:24:36.106 | INFO     | __main__:main:178 - Kafka producer closed.
 2025-02-02 19:24:36.107 | INFO     | __main__:main:180 - END producer.
+2025-02-02 19:34:17.808 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-02 19:34:17.825 | INFO     | __main__:<module>:68 - Project root: C:\Projects\buzzline-03-hudson
+2025-02-02 19:34:17.825 | INFO     | __main__:<module>:72 - Data folder: C:\Projects\buzzline-03-hudson\data
+2025-02-02 19:34:17.825 | INFO     | __main__:<module>:76 - Data file: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:34:17.825 | INFO     | __main__:main:136 - START producer.
+2025-02-02 19:34:17.825 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-02-02 19:34:17.858 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-02-02 19:34:17.858 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:34:18.200 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1001, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'MrCJePsSR6y2EeoYvAzI-A', 'controller_id': 1001}
+2025-02-02 19:34:18.202 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-02-02 19:34:18.203 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-02-02 19:34:18.204 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:34:18.204 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-02-02 19:34:18.316 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-02-02 19:34:18.317 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:34:18.655 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-02-02 19:34:18.656 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:34:19.007 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-02-02 19:34:19.008 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-02-02 19:34:19.009 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-02-02 19:34:19.009 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:34:19.021 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:34:19.023 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Erin'}
+2025-02-02 19:34:20.025 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I hope the Tigers win!', 'author': 'Avery'}
+2025-02-02 19:34:21.027 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Connie'}
+2025-02-02 19:34:22.030 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:34:23.031 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I hope the Tigers win!', 'author': 'Dylan'}
+2025-02-02 19:34:24.035 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:34:25.038 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I like this coach!', 'author': 'Dylan'}
+2025-02-02 19:34:26.041 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:34:27.043 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Erin'}
+2025-02-02 19:34:28.046 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Avery'}
+2025-02-02 19:34:29.049 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:34:30.052 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Dylan'}
+2025-02-02 19:34:31.056 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Connie'}
+2025-02-02 19:34:32.059 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Barb'}
+2025-02-02 19:34:33.062 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Barb'}
+2025-02-02 19:34:34.066 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:34:35.068 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Erin'}
+2025-02-02 19:34:36.071 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:34:37.075 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Avery'}
+2025-02-02 19:34:38.078 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:34:39.082 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Erin'}
+2025-02-02 19:34:40.084 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Connie'}
+2025-02-02 19:34:41.088 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Barb'}
+2025-02-02 19:34:42.091 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:34:43.096 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Dylan'}
+2025-02-02 19:34:44.099 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Dylan'}
+2025-02-02 19:34:45.102 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I like this coach!', 'author': 'Barb'}
+2025-02-02 19:34:46.106 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I hope the Tigers win!', 'author': 'Dylan'}
+2025-02-02 19:34:47.108 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Dylan'}
+2025-02-02 19:34:48.112 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Avery'}
+2025-02-02 19:34:49.115 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I like this coach!', 'author': 'Connie'}
+2025-02-02 19:34:50.118 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Dylan'}
+2025-02-02 19:34:51.122 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Barb'}
+2025-02-02 19:34:52.125 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Dylan'}
+2025-02-02 19:34:53.129 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I like this coach!', 'author': 'Avery'}
+2025-02-02 19:34:54.131 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Avery'}
+2025-02-02 19:34:55.134 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Connie'}
+2025-02-02 19:34:56.137 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Barb'}
+2025-02-02 19:34:57.140 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Dylan'}
+2025-02-02 19:34:58.143 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Dylan'}
+2025-02-02 19:34:59.145 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Avery'}
+2025-02-02 19:34:59.258 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-02 19:34:59.261 | INFO     | __main__:main:124 - START consumer.
+2025-02-02 19:34:59.261 | INFO     | __main__:get_kafka_topic:46 - Kafka topic: buzzline_json
+2025-02-02 19:34:59.261 | INFO     | __main__:get_kafka_consumer_group_id:53 - Kafka consumer group id: buzz_group
+2025-02-02 19:34:59.261 | INFO     | __main__:main:129 - Consumer: Topic 'buzzline_json' and group 'buzz_group'...
+2025-02-02 19:34:59.261 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:34:59.261 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-02-02 19:34:59.374 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-02-02 19:34:59.375 | INFO     | __main__:main:135 - Polling messages from topic 'buzzline_json'...
+2025-02-02 19:35:00.149 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Connie'}
+2025-02-02 19:35:01.151 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Avery'}
+2025-02-02 19:35:01.816 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Erin'}
+2025-02-02 19:35:01.816 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:01.816 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 1}
+2025-02-02 19:35:01.817 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I hope the Tigers win!', 'author': 'Avery'}
+2025-02-02 19:35:01.818 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.818 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 1, 'Avery': 1}
+2025-02-02 19:35:01.819 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Connie'}
+2025-02-02 19:35:01.820 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:01.820 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 1, 'Avery': 1, 'Connie': 1}
+2025-02-02 19:35:01.820 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:35:01.821 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.821 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 1, 'Avery': 2, 'Connie': 1}
+2025-02-02 19:35:01.822 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I hope the Tigers win!', 'author': 'Dylan'}
+2025-02-02 19:35:01.822 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.822 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 1, 'Avery': 2, 'Connie': 1, 'Dylan': 1}
+2025-02-02 19:35:01.823 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:35:01.823 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.823 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 1, 'Avery': 3, 'Connie': 1, 'Dylan': 1}
+2025-02-02 19:35:01.824 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I like this coach!', 'author': 'Dylan'}
+2025-02-02 19:35:01.825 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.825 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 1, 'Avery': 3, 'Connie': 1, 'Dylan': 2}
+2025-02-02 19:35:01.825 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:35:01.826 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:01.826 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 2, 'Avery': 3, 'Connie': 1, 'Dylan': 2}
+2025-02-02 19:35:01.826 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Erin'}
+2025-02-02 19:35:01.827 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:01.827 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 3, 'Avery': 3, 'Connie': 1, 'Dylan': 2}
+2025-02-02 19:35:01.828 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Avery'}
+2025-02-02 19:35:01.828 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.829 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 3, 'Avery': 4, 'Connie': 1, 'Dylan': 2}
+2025-02-02 19:35:01.830 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:35:01.830 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.830 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 3, 'Avery': 4, 'Connie': 1, 'Dylan': 3}
+2025-02-02 19:35:01.831 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Dylan'}
+2025-02-02 19:35:01.832 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.832 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 3, 'Avery': 4, 'Connie': 1, 'Dylan': 4}
+2025-02-02 19:35:01.833 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Connie'}
+2025-02-02 19:35:01.833 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:01.834 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 3, 'Avery': 4, 'Connie': 2, 'Dylan': 4}
+2025-02-02 19:35:01.835 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Barb'}
+2025-02-02 19:35:01.835 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:01.835 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 3, 'Avery': 4, 'Connie': 2, 'Dylan': 4, 'Barb': 1}
+2025-02-02 19:35:01.836 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Barb'}
+2025-02-02 19:35:01.837 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:01.837 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 3, 'Avery': 4, 'Connie': 2, 'Dylan': 4, 'Barb': 2}
+2025-02-02 19:35:01.838 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:35:01.839 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:01.839 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 4, 'Avery': 4, 'Connie': 2, 'Dylan': 4, 'Barb': 2}
+2025-02-02 19:35:01.840 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Erin'}
+2025-02-02 19:35:01.840 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:01.841 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 5, 'Avery': 4, 'Connie': 2, 'Dylan': 4, 'Barb': 2}
+2025-02-02 19:35:01.842 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:35:01.843 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.843 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 5, 'Avery': 5, 'Connie': 2, 'Dylan': 4, 'Barb': 2}
+2025-02-02 19:35:01.844 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Erin'}
+2025-02-02 19:35:01.845 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:01.845 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 6, 'Avery': 5, 'Connie': 2, 'Dylan': 4, 'Barb': 2}
+2025-02-02 19:35:01.846 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I hope the Tigers win!', 'author': 'Avery'}
+2025-02-02 19:35:01.847 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.847 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 6, 'Avery': 6, 'Connie': 2, 'Dylan': 4, 'Barb': 2}
+2025-02-02 19:35:01.848 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Connie'}
+2025-02-02 19:35:01.848 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:01.849 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 6, 'Avery': 6, 'Connie': 3, 'Dylan': 4, 'Barb': 2}
+2025-02-02 19:35:01.850 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:35:01.850 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.850 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 6, 'Avery': 7, 'Connie': 3, 'Dylan': 4, 'Barb': 2}
+2025-02-02 19:35:01.852 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I hope the Tigers win!', 'author': 'Dylan'}
+2025-02-02 19:35:01.852 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.852 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 6, 'Avery': 7, 'Connie': 3, 'Dylan': 5, 'Barb': 2}
+2025-02-02 19:35:01.854 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:35:01.854 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.855 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 6, 'Avery': 8, 'Connie': 3, 'Dylan': 5, 'Barb': 2}
+2025-02-02 19:35:01.856 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I like this coach!', 'author': 'Dylan'}
+2025-02-02 19:35:01.856 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.856 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 6, 'Avery': 8, 'Connie': 3, 'Dylan': 6, 'Barb': 2}
+2025-02-02 19:35:01.857 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:35:01.858 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:01.858 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 7, 'Avery': 8, 'Connie': 3, 'Dylan': 6, 'Barb': 2}
+2025-02-02 19:35:01.859 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Erin'}
+2025-02-02 19:35:01.859 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:01.859 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 8, 'Avery': 8, 'Connie': 3, 'Dylan': 6, 'Barb': 2}
+2025-02-02 19:35:01.860 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Avery'}
+2025-02-02 19:35:01.860 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.860 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 8, 'Avery': 9, 'Connie': 3, 'Dylan': 6, 'Barb': 2}
+2025-02-02 19:35:01.861 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:35:01.861 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.861 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 8, 'Avery': 9, 'Connie': 3, 'Dylan': 7, 'Barb': 2}
+2025-02-02 19:35:01.862 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Dylan'}
+2025-02-02 19:35:01.862 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.863 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 8, 'Avery': 9, 'Connie': 3, 'Dylan': 8, 'Barb': 2}
+2025-02-02 19:35:01.864 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Connie'}
+2025-02-02 19:35:01.864 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:01.865 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 8, 'Avery': 9, 'Connie': 4, 'Dylan': 8, 'Barb': 2}
+2025-02-02 19:35:01.866 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Barb'}
+2025-02-02 19:35:01.866 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:01.866 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 8, 'Avery': 9, 'Connie': 4, 'Dylan': 8, 'Barb': 3}
+2025-02-02 19:35:01.867 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Barb'}
+2025-02-02 19:35:01.867 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:01.868 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 8, 'Avery': 9, 'Connie': 4, 'Dylan': 8, 'Barb': 4}
+2025-02-02 19:35:01.869 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:35:01.869 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:01.869 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 9, 'Avery': 9, 'Connie': 4, 'Dylan': 8, 'Barb': 4}
+2025-02-02 19:35:01.871 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Erin'}
+2025-02-02 19:35:01.871 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:01.872 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 10, 'Avery': 9, 'Connie': 4, 'Dylan': 8, 'Barb': 4}
+2025-02-02 19:35:01.873 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:35:01.873 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.874 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 10, 'Avery': 10, 'Connie': 4, 'Dylan': 8, 'Barb': 4}
+2025-02-02 19:35:01.874 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Avery'}
+2025-02-02 19:35:01.875 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.875 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 10, 'Avery': 11, 'Connie': 4, 'Dylan': 8, 'Barb': 4}
+2025-02-02 19:35:01.875 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:35:01.876 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.876 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 10, 'Avery': 11, 'Connie': 4, 'Dylan': 9, 'Barb': 4}
+2025-02-02 19:35:01.876 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Erin'}
+2025-02-02 19:35:01.877 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:01.877 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 11, 'Connie': 4, 'Dylan': 9, 'Barb': 4}
+2025-02-02 19:35:01.877 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Connie'}
+2025-02-02 19:35:01.878 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:01.878 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 11, 'Connie': 5, 'Dylan': 9, 'Barb': 4}
+2025-02-02 19:35:01.879 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Barb'}
+2025-02-02 19:35:01.879 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:01.880 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 11, 'Connie': 5, 'Dylan': 9, 'Barb': 5}
+2025-02-02 19:35:01.881 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:35:01.882 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.882 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 12, 'Connie': 5, 'Dylan': 9, 'Barb': 5}
+2025-02-02 19:35:01.882 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Dylan'}
+2025-02-02 19:35:01.883 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.883 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 12, 'Connie': 5, 'Dylan': 10, 'Barb': 5}
+2025-02-02 19:35:01.884 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Dylan'}
+2025-02-02 19:35:01.884 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.884 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 12, 'Connie': 5, 'Dylan': 11, 'Barb': 5}
+2025-02-02 19:35:01.885 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I like this coach!', 'author': 'Barb'}
+2025-02-02 19:35:01.885 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:01.886 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 12, 'Connie': 5, 'Dylan': 11, 'Barb': 6}
+2025-02-02 19:35:01.887 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I hope the Tigers win!', 'author': 'Dylan'}
+2025-02-02 19:35:01.887 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.887 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 12, 'Connie': 5, 'Dylan': 12, 'Barb': 6}
+2025-02-02 19:35:01.888 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Dylan'}
+2025-02-02 19:35:01.888 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.888 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 12, 'Connie': 5, 'Dylan': 13, 'Barb': 6}
+2025-02-02 19:35:01.889 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Avery'}
+2025-02-02 19:35:01.889 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.889 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 13, 'Connie': 5, 'Dylan': 13, 'Barb': 6}
+2025-02-02 19:35:01.890 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I like this coach!', 'author': 'Connie'}
+2025-02-02 19:35:01.890 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:01.890 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 13, 'Connie': 6, 'Dylan': 13, 'Barb': 6}
+2025-02-02 19:35:01.891 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Dylan'}
+2025-02-02 19:35:01.891 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.891 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 13, 'Connie': 6, 'Dylan': 14, 'Barb': 6}
+2025-02-02 19:35:01.892 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Barb'}
+2025-02-02 19:35:01.892 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:01.892 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 13, 'Connie': 6, 'Dylan': 14, 'Barb': 7}
+2025-02-02 19:35:01.893 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Dylan'}
+2025-02-02 19:35:01.893 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.893 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 13, 'Connie': 6, 'Dylan': 15, 'Barb': 7}
+2025-02-02 19:35:01.894 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I like this coach!', 'author': 'Avery'}
+2025-02-02 19:35:01.894 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.894 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 14, 'Connie': 6, 'Dylan': 15, 'Barb': 7}
+2025-02-02 19:35:01.895 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Avery'}
+2025-02-02 19:35:01.895 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.895 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 15, 'Connie': 6, 'Dylan': 15, 'Barb': 7}
+2025-02-02 19:35:01.896 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'What a shot!', 'author': 'Connie'}
+2025-02-02 19:35:01.896 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:01.896 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 15, 'Connie': 7, 'Dylan': 15, 'Barb': 7}
+2025-02-02 19:35:01.897 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'What a shot!', 'author': 'Barb'}
+2025-02-02 19:35:01.897 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:01.897 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 15, 'Connie': 7, 'Dylan': 15, 'Barb': 8}
+2025-02-02 19:35:01.898 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Dylan'}
+2025-02-02 19:35:01.898 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.898 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 15, 'Connie': 7, 'Dylan': 16, 'Barb': 8}
+2025-02-02 19:35:01.899 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Dylan'}
+2025-02-02 19:35:01.900 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:01.900 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 15, 'Connie': 7, 'Dylan': 17, 'Barb': 8}
+2025-02-02 19:35:01.900 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Avery'}
+2025-02-02 19:35:01.901 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.901 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 16, 'Connie': 7, 'Dylan': 17, 'Barb': 8}
+2025-02-02 19:35:01.902 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Connie'}
+2025-02-02 19:35:01.902 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:01.902 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 16, 'Connie': 8, 'Dylan': 17, 'Barb': 8}
+2025-02-02 19:35:01.903 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Avery'}
+2025-02-02 19:35:01.903 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:01.904 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 17, 'Connie': 8, 'Dylan': 17, 'Barb': 8}
+2025-02-02 19:35:02.154 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Dylan'}
+2025-02-02 19:35:02.165 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Dylan'}
+2025-02-02 19:35:02.166 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:02.167 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 17, 'Connie': 8, 'Dylan': 18, 'Barb': 8}
+2025-02-02 19:35:03.158 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Avery'}
+2025-02-02 19:35:03.163 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Avery'}
+2025-02-02 19:35:03.163 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:03.164 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 18, 'Connie': 8, 'Dylan': 18, 'Barb': 8}
+2025-02-02 19:35:04.160 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Barb'}
+2025-02-02 19:35:04.169 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Barb'}
+2025-02-02 19:35:04.170 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:04.171 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 18, 'Connie': 8, 'Dylan': 18, 'Barb': 9}
+2025-02-02 19:35:05.163 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Barb'}
+2025-02-02 19:35:05.172 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Barb'}
+2025-02-02 19:35:05.173 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:05.174 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 18, 'Connie': 8, 'Dylan': 18, 'Barb': 10}
+2025-02-02 19:35:06.167 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Dylan'}
+2025-02-02 19:35:06.176 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Dylan'}
+2025-02-02 19:35:06.177 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:06.178 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 18, 'Connie': 8, 'Dylan': 19, 'Barb': 10}
+2025-02-02 19:35:07.170 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Barb'}
+2025-02-02 19:35:07.179 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Barb'}
+2025-02-02 19:35:07.180 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:07.181 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 11, 'Avery': 18, 'Connie': 8, 'Dylan': 19, 'Barb': 11}
+2025-02-02 19:35:08.173 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:35:08.182 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:35:08.183 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:08.184 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 12, 'Avery': 18, 'Connie': 8, 'Dylan': 19, 'Barb': 11}
+2025-02-02 19:35:09.177 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I like this coach!', 'author': 'Barb'}
+2025-02-02 19:35:09.186 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I like this coach!', 'author': 'Barb'}
+2025-02-02 19:35:09.187 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:09.188 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 12, 'Avery': 18, 'Connie': 8, 'Dylan': 19, 'Barb': 12}
+2025-02-02 19:35:10.181 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Avery'}
+2025-02-02 19:35:10.189 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Avery'}
+2025-02-02 19:35:10.190 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:10.191 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 12, 'Avery': 19, 'Connie': 8, 'Dylan': 19, 'Barb': 12}
+2025-02-02 19:35:11.184 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Erin'}
+2025-02-02 19:35:11.194 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Erin'}
+2025-02-02 19:35:11.195 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:11.196 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 19, 'Connie': 8, 'Dylan': 19, 'Barb': 12}
+2025-02-02 19:35:12.187 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Avery'}
+2025-02-02 19:35:12.197 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Avery'}
+2025-02-02 19:35:12.198 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:12.199 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 20, 'Connie': 8, 'Dylan': 19, 'Barb': 12}
+2025-02-02 19:35:13.191 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Barb'}
+2025-02-02 19:35:13.199 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Barb'}
+2025-02-02 19:35:13.200 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:13.201 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 20, 'Connie': 8, 'Dylan': 19, 'Barb': 13}
+2025-02-02 19:35:14.194 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Connie'}
+2025-02-02 19:35:14.204 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Connie'}
+2025-02-02 19:35:14.205 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:14.206 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 20, 'Connie': 9, 'Dylan': 19, 'Barb': 13}
+2025-02-02 19:35:15.198 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Dylan'}
+2025-02-02 19:35:15.206 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Dylan'}
+2025-02-02 19:35:15.207 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:15.208 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 20, 'Connie': 9, 'Dylan': 20, 'Barb': 13}
+2025-02-02 19:35:16.202 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I hope the Tigers win!', 'author': 'Barb'}
+2025-02-02 19:35:16.210 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I hope the Tigers win!', 'author': 'Barb'}
+2025-02-02 19:35:16.211 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:16.211 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 20, 'Connie': 9, 'Dylan': 20, 'Barb': 14}
+2025-02-02 19:35:17.204 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Avery'}
+2025-02-02 19:35:17.212 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Avery'}
+2025-02-02 19:35:17.214 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:17.214 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 21, 'Connie': 9, 'Dylan': 20, 'Barb': 14}
+2025-02-02 19:35:18.207 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Avery'}
+2025-02-02 19:35:18.215 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Avery'}
+2025-02-02 19:35:18.216 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:18.217 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 22, 'Connie': 9, 'Dylan': 20, 'Barb': 14}
+2025-02-02 19:35:19.210 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Dylan'}
+2025-02-02 19:35:19.218 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Dylan'}
+2025-02-02 19:35:19.219 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:19.220 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 22, 'Connie': 9, 'Dylan': 21, 'Barb': 14}
+2025-02-02 19:35:20.214 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Avery'}
+2025-02-02 19:35:20.222 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Avery'}
+2025-02-02 19:35:20.223 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:20.225 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 23, 'Connie': 9, 'Dylan': 21, 'Barb': 14}
+2025-02-02 19:35:21.218 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Dylan'}
+2025-02-02 19:35:21.226 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Dylan'}
+2025-02-02 19:35:21.227 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:21.228 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 23, 'Connie': 9, 'Dylan': 22, 'Barb': 14}
+2025-02-02 19:35:22.220 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Barb'}
+2025-02-02 19:35:22.229 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Barb'}
+2025-02-02 19:35:22.230 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:22.231 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 23, 'Connie': 9, 'Dylan': 22, 'Barb': 15}
+2025-02-02 19:35:23.224 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Dylan'}
+2025-02-02 19:35:23.232 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Dylan'}
+2025-02-02 19:35:23.233 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:23.234 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 23, 'Connie': 9, 'Dylan': 23, 'Barb': 15}
+2025-02-02 19:35:24.226 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Avery'}
+2025-02-02 19:35:24.230 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Avery'}
+2025-02-02 19:35:24.230 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:24.231 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 13, 'Avery': 24, 'Connie': 9, 'Dylan': 23, 'Barb': 15}
+2025-02-02 19:35:25.229 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Erin'}
+2025-02-02 19:35:25.238 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Erin'}
+2025-02-02 19:35:25.239 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:25.240 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 14, 'Avery': 24, 'Connie': 9, 'Dylan': 23, 'Barb': 15}
+2025-02-02 19:35:26.233 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Dylan'}
+2025-02-02 19:35:26.242 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Dylan'}
+2025-02-02 19:35:26.243 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:26.244 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 14, 'Avery': 24, 'Connie': 9, 'Dylan': 24, 'Barb': 15}
+2025-02-02 19:35:27.236 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Connie'}
+2025-02-02 19:35:27.246 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'What a shot!', 'author': 'Connie'}
+2025-02-02 19:35:27.246 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:27.247 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 14, 'Avery': 24, 'Connie': 10, 'Dylan': 24, 'Barb': 15}
+2025-02-02 19:35:28.241 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Connie'}
+2025-02-02 19:35:28.248 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Connie'}
+2025-02-02 19:35:28.249 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:28.250 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 14, 'Avery': 24, 'Connie': 11, 'Dylan': 24, 'Barb': 15}
+2025-02-02 19:35:29.243 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Avery'}
+2025-02-02 19:35:29.253 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Avery'}
+2025-02-02 19:35:29.254 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:29.255 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 14, 'Avery': 25, 'Connie': 11, 'Dylan': 24, 'Barb': 15}
+2025-02-02 19:35:30.247 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I like this coach!', 'author': 'Dylan'}
+2025-02-02 19:35:30.256 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I like this coach!', 'author': 'Dylan'}
+2025-02-02 19:35:30.256 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:30.257 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 14, 'Avery': 25, 'Connie': 11, 'Dylan': 25, 'Barb': 15}
+2025-02-02 19:35:31.251 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Barb'}
+2025-02-02 19:35:31.258 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Barb'}
+2025-02-02 19:35:31.259 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:31.260 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 14, 'Avery': 25, 'Connie': 11, 'Dylan': 25, 'Barb': 16}
+2025-02-02 19:35:32.254 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Erin'}
+2025-02-02 19:35:32.262 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Erin'}
+2025-02-02 19:35:32.263 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:32.264 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 15, 'Avery': 25, 'Connie': 11, 'Dylan': 25, 'Barb': 16}
+2025-02-02 19:35:33.257 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Connie'}
+2025-02-02 19:35:33.266 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Connie'}
+2025-02-02 19:35:33.267 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:33.268 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 15, 'Avery': 25, 'Connie': 12, 'Dylan': 25, 'Barb': 16}
+2025-02-02 19:35:34.260 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Connie'}
+2025-02-02 19:35:34.268 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Connie'}
+2025-02-02 19:35:34.269 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:34.270 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 15, 'Avery': 25, 'Connie': 13, 'Dylan': 25, 'Barb': 16}
+2025-02-02 19:35:35.263 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Connie'}
+2025-02-02 19:35:35.271 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Connie'}
+2025-02-02 19:35:35.272 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:35.273 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 15, 'Avery': 25, 'Connie': 14, 'Dylan': 25, 'Barb': 16}
+2025-02-02 19:35:36.267 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Dylan'}
+2025-02-02 19:35:36.274 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Dylan'}
+2025-02-02 19:35:36.275 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:36.276 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 15, 'Avery': 25, 'Connie': 14, 'Dylan': 26, 'Barb': 16}
+2025-02-02 19:35:37.271 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Dylan'}
+2025-02-02 19:35:37.278 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Dylan'}
+2025-02-02 19:35:37.279 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:37.280 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 15, 'Avery': 25, 'Connie': 14, 'Dylan': 27, 'Barb': 16}
+2025-02-02 19:35:38.274 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Erin'}
+2025-02-02 19:35:38.282 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Erin'}
+2025-02-02 19:35:38.283 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:38.284 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 16, 'Avery': 25, 'Connie': 14, 'Dylan': 27, 'Barb': 16}
+2025-02-02 19:35:39.277 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Erin'}
+2025-02-02 19:35:39.285 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'What a shot!', 'author': 'Erin'}
+2025-02-02 19:35:39.286 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:39.287 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 17, 'Avery': 25, 'Connie': 14, 'Dylan': 27, 'Barb': 16}
+2025-02-02 19:35:40.280 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Erin'}
+2025-02-02 19:35:40.288 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Erin'}
+2025-02-02 19:35:40.289 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:40.290 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 18, 'Avery': 25, 'Connie': 14, 'Dylan': 27, 'Barb': 16}
+2025-02-02 19:35:41.284 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Avery'}
+2025-02-02 19:35:41.292 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Avery'}
+2025-02-02 19:35:41.294 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:41.295 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 18, 'Avery': 26, 'Connie': 14, 'Dylan': 27, 'Barb': 16}
+2025-02-02 19:35:42.287 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Barb'}
+2025-02-02 19:35:42.295 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Barb'}
+2025-02-02 19:35:42.296 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:42.297 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 18, 'Avery': 26, 'Connie': 14, 'Dylan': 27, 'Barb': 17}
+2025-02-02 19:35:43.290 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Barb'}
+2025-02-02 19:35:43.298 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': "That's a winner!", 'author': 'Barb'}
+2025-02-02 19:35:43.299 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:43.300 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 18, 'Avery': 26, 'Connie': 14, 'Dylan': 27, 'Barb': 18}
+2025-02-02 19:35:44.295 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:35:44.303 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:35:44.304 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:44.305 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 19, 'Avery': 26, 'Connie': 14, 'Dylan': 27, 'Barb': 18}
+2025-02-02 19:35:45.297 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Avery'}
+2025-02-02 19:35:45.301 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Avery'}
+2025-02-02 19:35:45.301 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:45.302 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 19, 'Avery': 27, 'Connie': 14, 'Dylan': 27, 'Barb': 18}
+2025-02-02 19:35:46.300 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I hope the Tigers win!', 'author': 'Dylan'}
+2025-02-02 19:35:46.309 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I hope the Tigers win!', 'author': 'Dylan'}
+2025-02-02 19:35:46.310 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:46.311 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 19, 'Avery': 27, 'Connie': 14, 'Dylan': 28, 'Barb': 18}
+2025-02-02 19:35:47.303 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Erin'}
+2025-02-02 19:35:47.311 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Erin'}
+2025-02-02 19:35:47.312 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:47.313 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 20, 'Avery': 27, 'Connie': 14, 'Dylan': 28, 'Barb': 18}
+2025-02-02 19:35:48.307 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Connie'}
+2025-02-02 19:35:48.311 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Connie'}
+2025-02-02 19:35:48.312 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:48.313 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 20, 'Avery': 27, 'Connie': 15, 'Dylan': 28, 'Barb': 18}
+2025-02-02 19:35:49.310 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Erin'}
+2025-02-02 19:35:49.318 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Erin'}
+2025-02-02 19:35:49.319 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:49.319 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 21, 'Avery': 27, 'Connie': 15, 'Dylan': 28, 'Barb': 18}
+2025-02-02 19:35:50.313 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Dylan'}
+2025-02-02 19:35:50.321 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'What a shot!', 'author': 'Dylan'}
+2025-02-02 19:35:50.322 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:50.323 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 21, 'Avery': 27, 'Connie': 15, 'Dylan': 29, 'Barb': 18}
+2025-02-02 19:35:51.316 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Connie'}
+2025-02-02 19:35:51.324 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Connie'}
+2025-02-02 19:35:51.325 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:51.326 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 21, 'Avery': 27, 'Connie': 16, 'Dylan': 29, 'Barb': 18}
+2025-02-02 19:35:52.319 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I hope the Tigers win!', 'author': 'Connie'}
+2025-02-02 19:35:52.323 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I hope the Tigers win!', 'author': 'Connie'}
+2025-02-02 19:35:52.324 | INFO     | __main__:process_message:95 - Message received from author: Connie
+2025-02-02 19:35:52.324 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 21, 'Avery': 27, 'Connie': 17, 'Dylan': 29, 'Barb': 18}
+2025-02-02 19:35:53.322 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Barb'}
+2025-02-02 19:35:53.329 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'What a shot!', 'author': 'Barb'}
+2025-02-02 19:35:53.331 | INFO     | __main__:process_message:95 - Message received from author: Barb
+2025-02-02 19:35:53.332 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 21, 'Avery': 27, 'Connie': 17, 'Dylan': 29, 'Barb': 19}
+2025-02-02 19:35:54.325 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:35:54.332 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:35:54.333 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:54.334 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 22, 'Avery': 27, 'Connie': 17, 'Dylan': 29, 'Barb': 19}
+2025-02-02 19:35:55.328 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:35:55.335 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:35:55.336 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:55.337 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 22, 'Avery': 27, 'Connie': 17, 'Dylan': 30, 'Barb': 19}
+2025-02-02 19:35:56.331 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:35:56.339 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:35:56.340 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:56.341 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 22, 'Avery': 28, 'Connie': 17, 'Dylan': 30, 'Barb': 19}
+2025-02-02 19:35:57.334 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Dylan'}
+2025-02-02 19:35:57.342 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'What a shot!', 'author': 'Dylan'}
+2025-02-02 19:35:57.344 | INFO     | __main__:process_message:95 - Message received from author: Dylan
+2025-02-02 19:35:57.345 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 22, 'Avery': 28, 'Connie': 17, 'Dylan': 31, 'Barb': 19}
+2025-02-02 19:35:58.338 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Avery'}
+2025-02-02 19:35:58.347 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Avery'}
+2025-02-02 19:35:58.348 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:35:58.349 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 22, 'Avery': 29, 'Connie': 17, 'Dylan': 31, 'Barb': 19}
+2025-02-02 19:35:59.340 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:35:59.341 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:35:59.343 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Erin'}
+2025-02-02 19:35:59.347 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Erin'}
+2025-02-02 19:35:59.348 | INFO     | __main__:process_message:95 - Message received from author: Erin
+2025-02-02 19:35:59.348 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 23, 'Avery': 29, 'Connie': 17, 'Dylan': 31, 'Barb': 19}
+2025-02-02 19:36:00.346 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I hope the Tigers win!', 'author': 'Avery'}
+2025-02-02 19:36:00.350 | WARNING  | __main__:main:173 - Producer interrupted by user.
+2025-02-02 19:36:00.354 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-02-02 19:36:00.355 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'I hope the Tigers win!', 'author': 'Avery'}
+2025-02-02 19:36:00.356 | INFO     | __main__:main:180 - END producer.
+2025-02-02 19:36:00.356 | INFO     | __main__:process_message:95 - Message received from author: Avery
+2025-02-02 19:36:00.357 | INFO     | __main__:process_message:101 - Updated author counts: {'Erin': 23, 'Avery': 30, 'Connie': 17, 'Dylan': 31, 'Barb': 19}
+2025-02-02 19:36:02.924 | WARNING  | __main__:main:142 - Consumer interrupted by user.
+2025-02-02 19:36:02.959 | INFO     | __main__:main:147 - Kafka consumer for topic 'buzzline_json' closed.
+2025-02-02 19:36:02.959 | INFO     | __main__:main:149 - END consumer for topic 'buzzline_json' and group 'buzz_group'.
+2025-02-02 19:46:34.831 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-02 19:46:34.839 | INFO     | __main__:<module>:68 - Project root: C:\Projects\buzzline-03-hudson
+2025-02-02 19:46:34.840 | INFO     | __main__:<module>:72 - Data folder: C:\Projects\buzzline-03-hudson\data
+2025-02-02 19:46:34.840 | INFO     | __main__:<module>:76 - Data file: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:46:34.840 | INFO     | __main__:main:136 - START producer.
+2025-02-02 19:46:34.840 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-02-02 19:46:34.848 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-02-02 19:46:34.848 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:46:35.196 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1001, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'MrCJePsSR6y2EeoYvAzI-A', 'controller_id': 1001}
+2025-02-02 19:46:35.198 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-02-02 19:46:35.199 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-02-02 19:46:35.200 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:46:35.201 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-02-02 19:46:35.316 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-02-02 19:46:35.317 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:46:35.657 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-02-02 19:46:35.658 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:46:35.992 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-02-02 19:46:35.993 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-02-02 19:46:35.993 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-02-02 19:46:35.994 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:46:35.995 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:46:36.000 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Erin'}
+2025-02-02 19:46:37.003 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I hope the Tigers win!', 'author': 'Avery'}
+2025-02-02 19:46:38.006 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Connie'}
+2025-02-02 19:46:39.009 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:46:40.013 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I hope the Tigers win!', 'author': 'Dylan'}
+2025-02-02 19:46:41.015 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:46:41.882 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-02 19:46:42.017 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I like this coach!', 'author': 'Dylan'}
+2025-02-02 19:46:43.021 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:46:44.024 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Erin'}
+2025-02-02 19:46:45.027 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Avery'}
+2025-02-02 19:46:46.029 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:46:47.032 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Dylan'}
+2025-02-02 19:46:48.035 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Connie'}
+2025-02-02 19:46:49.038 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Barb'}
+2025-02-02 19:46:49.433 | WARNING  | __main__:main:173 - Producer interrupted by user.
+2025-02-02 19:46:49.435 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-02-02 19:46:49.436 | INFO     | __main__:main:180 - END producer.
+2025-02-02 19:47:47.740 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-02 19:47:49.271 | INFO     | __main__:main:133 - START consumer.
+2025-02-02 19:47:49.272 | INFO     | __main__:get_kafka_topic:46 - Kafka topic: buzzline_json
+2025-02-02 19:47:49.272 | INFO     | __main__:get_kafka_consumer_group_id:53 - Kafka consumer group id: buzz_group
+2025-02-02 19:47:49.272 | INFO     | __main__:main:138 - Consumer: Topic 'buzzline_json' and group 'buzz_group'...
+2025-02-02 19:47:49.273 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:47:49.273 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-02-02 19:47:49.387 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-02-02 19:47:49.388 | INFO     | __main__:main:144 - Polling messages from topic 'buzzline_json'...
+2025-02-02 19:47:49.548 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Erin'}
+2025-02-02 19:47:49.549 | INFO     | __main__:process_message:97 - Message received from author: Erin
+2025-02-02 19:47:49.550 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 1}
+2025-02-02 19:47:49.630 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -0.7, Subjectivity: 0.7
+2025-02-02 19:47:49.632 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'I hope the Tigers win!', 'author': 'Avery'}
+2025-02-02 19:47:49.632 | INFO     | __main__:process_message:97 - Message received from author: Avery
+2025-02-02 19:47:49.632 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 1, 'Avery': 1}
+2025-02-02 19:47:49.633 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 1.0, Subjectivity: 0.4
+2025-02-02 19:47:49.634 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Connie'}
+2025-02-02 19:47:49.634 | INFO     | __main__:process_message:97 - Message received from author: Connie
+2025-02-02 19:47:49.635 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 1, 'Avery': 1, 'Connie': 1}
+2025-02-02 19:47:49.635 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:47:49.636 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:47:49.637 | INFO     | __main__:process_message:97 - Message received from author: Avery
+2025-02-02 19:47:49.637 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 1, 'Avery': 2, 'Connie': 1}
+2025-02-02 19:47:49.638 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -0.7, Subjectivity: 0.7
+2025-02-02 19:47:49.639 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'I hope the Tigers win!', 'author': 'Dylan'}
+2025-02-02 19:47:49.639 | INFO     | __main__:process_message:97 - Message received from author: Dylan
+2025-02-02 19:47:49.639 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 1, 'Avery': 2, 'Connie': 1, 'Dylan': 1}
+2025-02-02 19:47:49.640 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 1.0, Subjectivity: 0.4
+2025-02-02 19:47:49.642 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:47:49.642 | INFO     | __main__:process_message:97 - Message received from author: Avery
+2025-02-02 19:47:49.642 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 1, 'Avery': 3, 'Connie': 1, 'Dylan': 1}
+2025-02-02 19:47:49.643 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:47:49.644 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'I like this coach!', 'author': 'Dylan'}
+2025-02-02 19:47:49.645 | INFO     | __main__:process_message:97 - Message received from author: Dylan
+2025-02-02 19:47:49.645 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 1, 'Avery': 3, 'Connie': 1, 'Dylan': 2}
+2025-02-02 19:47:49.645 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:47:49.646 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:47:49.646 | INFO     | __main__:process_message:97 - Message received from author: Erin
+2025-02-02 19:47:49.647 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 2, 'Avery': 3, 'Connie': 1, 'Dylan': 2}
+2025-02-02 19:47:49.648 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -0.225, Subjectivity: 0.4
+2025-02-02 19:47:49.649 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Erin'}
+2025-02-02 19:47:49.649 | INFO     | __main__:process_message:97 - Message received from author: Erin
+2025-02-02 19:47:49.649 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 3, 'Avery': 3, 'Connie': 1, 'Dylan': 2}
+2025-02-02 19:47:49.650 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -1.0, Subjectivity: 0.6666666666666666
+2025-02-02 19:47:49.652 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Avery'}
+2025-02-02 19:47:49.653 | INFO     | __main__:process_message:97 - Message received from author: Avery
+2025-02-02 19:47:49.653 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 3, 'Avery': 4, 'Connie': 1, 'Dylan': 2}
+2025-02-02 19:47:49.654 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -1.0, Subjectivity: 0.6666666666666666
+2025-02-02 19:47:49.655 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:47:49.656 | INFO     | __main__:process_message:97 - Message received from author: Dylan
+2025-02-02 19:47:49.656 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 3, 'Avery': 4, 'Connie': 1, 'Dylan': 3}
+2025-02-02 19:47:49.657 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -0.7, Subjectivity: 0.7
+2025-02-02 19:47:49.658 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Dylan'}
+2025-02-02 19:47:49.658 | INFO     | __main__:process_message:97 - Message received from author: Dylan
+2025-02-02 19:47:49.659 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 3, 'Avery': 4, 'Connie': 1, 'Dylan': 4}
+2025-02-02 19:47:49.660 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -1.0, Subjectivity: 0.6666666666666666
+2025-02-02 19:47:49.661 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Connie'}
+2025-02-02 19:47:49.661 | INFO     | __main__:process_message:97 - Message received from author: Connie
+2025-02-02 19:47:49.662 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 3, 'Avery': 4, 'Connie': 2, 'Dylan': 4}
+2025-02-02 19:47:49.662 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:47:49.664 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Barb'}
+2025-02-02 19:47:49.664 | INFO     | __main__:process_message:97 - Message received from author: Barb
+2025-02-02 19:47:49.665 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 3, 'Avery': 4, 'Connie': 2, 'Dylan': 4, 'Barb': 1}
+2025-02-02 19:47:49.666 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -1.0, Subjectivity: 0.6666666666666666
+2025-02-02 19:47:55.290 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-02 19:47:55.293 | INFO     | __main__:<module>:68 - Project root: C:\Projects\buzzline-03-hudson
+2025-02-02 19:47:55.293 | INFO     | __main__:<module>:72 - Data folder: C:\Projects\buzzline-03-hudson\data
+2025-02-02 19:47:55.294 | INFO     | __main__:<module>:76 - Data file: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:47:55.294 | INFO     | __main__:main:136 - START producer.
+2025-02-02 19:47:55.294 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-02-02 19:47:55.302 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-02-02 19:47:55.302 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:47:55.639 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1001, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'MrCJePsSR6y2EeoYvAzI-A', 'controller_id': 1001}
+2025-02-02 19:47:55.641 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-02-02 19:47:55.642 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-02-02 19:47:55.643 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:47:55.644 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-02-02 19:47:55.759 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-02-02 19:47:55.760 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:47:56.099 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-02-02 19:47:56.100 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:47:56.435 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-02-02 19:47:56.437 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-02-02 19:47:56.438 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-02-02 19:47:56.439 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:47:56.440 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:47:56.445 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Erin'}
+2025-02-02 19:47:56.458 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Erin'}
+2025-02-02 19:47:56.458 | INFO     | __main__:process_message:97 - Message received from author: Erin
+2025-02-02 19:47:56.459 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 4, 'Avery': 4, 'Connie': 2, 'Dylan': 4, 'Barb': 1}
+2025-02-02 19:47:56.459 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -0.7, Subjectivity: 0.7
+2025-02-02 19:47:57.450 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I hope the Tigers win!', 'author': 'Avery'}
+2025-02-02 19:47:57.454 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'I hope the Tigers win!', 'author': 'Avery'}
+2025-02-02 19:47:57.455 | INFO     | __main__:process_message:97 - Message received from author: Avery
+2025-02-02 19:47:57.456 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 4, 'Avery': 5, 'Connie': 2, 'Dylan': 4, 'Barb': 1}
+2025-02-02 19:47:57.457 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 1.0, Subjectivity: 0.4
+2025-02-02 19:47:58.452 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Connie'}
+2025-02-02 19:47:58.460 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Connie'}
+2025-02-02 19:47:58.461 | INFO     | __main__:process_message:97 - Message received from author: Connie
+2025-02-02 19:47:58.462 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 4, 'Avery': 5, 'Connie': 3, 'Dylan': 4, 'Barb': 1}
+2025-02-02 19:47:58.464 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:47:59.455 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:47:59.462 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:47:59.463 | INFO     | __main__:process_message:97 - Message received from author: Avery
+2025-02-02 19:47:59.466 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 4, 'Avery': 6, 'Connie': 3, 'Dylan': 4, 'Barb': 1}
+2025-02-02 19:47:59.468 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -0.7, Subjectivity: 0.7
+2025-02-02 19:48:00.457 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I hope the Tigers win!', 'author': 'Dylan'}
+2025-02-02 19:48:00.463 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'I hope the Tigers win!', 'author': 'Dylan'}
+2025-02-02 19:48:00.464 | INFO     | __main__:process_message:97 - Message received from author: Dylan
+2025-02-02 19:48:00.464 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 4, 'Avery': 6, 'Connie': 3, 'Dylan': 5, 'Barb': 1}
+2025-02-02 19:48:00.465 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 1.0, Subjectivity: 0.4
+2025-02-02 19:48:01.461 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:48:01.466 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:48:01.467 | INFO     | __main__:process_message:97 - Message received from author: Avery
+2025-02-02 19:48:01.468 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 4, 'Avery': 7, 'Connie': 3, 'Dylan': 5, 'Barb': 1}
+2025-02-02 19:48:01.469 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:48:02.464 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I like this coach!', 'author': 'Dylan'}
+2025-02-02 19:48:02.472 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'I like this coach!', 'author': 'Dylan'}
+2025-02-02 19:48:02.472 | INFO     | __main__:process_message:97 - Message received from author: Dylan
+2025-02-02 19:48:02.474 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 4, 'Avery': 7, 'Connie': 3, 'Dylan': 6, 'Barb': 1}
+2025-02-02 19:48:02.475 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:48:03.468 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:48:03.476 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:48:03.477 | INFO     | __main__:process_message:97 - Message received from author: Erin
+2025-02-02 19:48:03.478 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 5, 'Avery': 7, 'Connie': 3, 'Dylan': 6, 'Barb': 1}
+2025-02-02 19:48:03.480 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -0.225, Subjectivity: 0.4
+2025-02-02 19:48:04.471 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Erin'}
+2025-02-02 19:48:04.478 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Erin'}
+2025-02-02 19:48:04.480 | INFO     | __main__:process_message:97 - Message received from author: Erin
+2025-02-02 19:48:04.481 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 6, 'Avery': 7, 'Connie': 3, 'Dylan': 6, 'Barb': 1}
+2025-02-02 19:48:04.482 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -1.0, Subjectivity: 0.6666666666666666
+2025-02-02 19:48:05.473 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Avery'}
+2025-02-02 19:48:05.477 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Avery'}
+2025-02-02 19:48:05.477 | INFO     | __main__:process_message:97 - Message received from author: Avery
+2025-02-02 19:48:05.477 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 6, 'Avery': 8, 'Connie': 3, 'Dylan': 6, 'Barb': 1}
+2025-02-02 19:48:05.479 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -1.0, Subjectivity: 0.6666666666666666
+2025-02-02 19:48:06.476 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:48:06.485 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:48:06.486 | INFO     | __main__:process_message:97 - Message received from author: Dylan
+2025-02-02 19:48:06.487 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 6, 'Avery': 8, 'Connie': 3, 'Dylan': 7, 'Barb': 1}
+2025-02-02 19:48:06.489 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -0.7, Subjectivity: 0.7
+2025-02-02 19:48:07.479 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Dylan'}
+2025-02-02 19:48:07.487 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Dylan'}
+2025-02-02 19:48:07.488 | INFO     | __main__:process_message:97 - Message received from author: Dylan
+2025-02-02 19:48:07.489 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 6, 'Avery': 8, 'Connie': 3, 'Dylan': 8, 'Barb': 1}
+2025-02-02 19:48:07.491 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -1.0, Subjectivity: 0.6666666666666666
+2025-02-02 19:48:08.482 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Connie'}
+2025-02-02 19:48:08.490 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Connie'}
+2025-02-02 19:48:08.491 | INFO     | __main__:process_message:97 - Message received from author: Connie
+2025-02-02 19:48:08.492 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 6, 'Avery': 8, 'Connie': 4, 'Dylan': 8, 'Barb': 1}
+2025-02-02 19:48:08.494 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:48:09.485 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Barb'}
+2025-02-02 19:48:09.488 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Barb'}
+2025-02-02 19:48:09.489 | INFO     | __main__:process_message:97 - Message received from author: Barb
+2025-02-02 19:48:09.489 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 6, 'Avery': 8, 'Connie': 4, 'Dylan': 8, 'Barb': 2}
+2025-02-02 19:48:09.489 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -1.0, Subjectivity: 0.6666666666666666
+2025-02-02 19:48:10.488 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Barb'}
+2025-02-02 19:48:10.495 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': "That's a winner!", 'author': 'Barb'}
+2025-02-02 19:48:10.496 | INFO     | __main__:process_message:97 - Message received from author: Barb
+2025-02-02 19:48:10.496 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 6, 'Avery': 8, 'Connie': 4, 'Dylan': 8, 'Barb': 3}
+2025-02-02 19:48:10.497 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:48:11.494 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:48:11.501 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:48:11.502 | INFO     | __main__:process_message:97 - Message received from author: Erin
+2025-02-02 19:48:11.502 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 7, 'Avery': 8, 'Connie': 4, 'Dylan': 8, 'Barb': 3}
+2025-02-02 19:48:11.503 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -0.225, Subjectivity: 0.4
+2025-02-02 19:48:12.499 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Erin'}
+2025-02-02 19:48:12.506 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': "That's a winner!", 'author': 'Erin'}
+2025-02-02 19:48:12.507 | INFO     | __main__:process_message:97 - Message received from author: Erin
+2025-02-02 19:48:12.508 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 8, 'Avery': 8, 'Connie': 4, 'Dylan': 8, 'Barb': 3}
+2025-02-02 19:48:12.509 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:48:13.503 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:48:13.511 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:48:13.512 | INFO     | __main__:process_message:97 - Message received from author: Avery
+2025-02-02 19:48:13.512 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 8, 'Avery': 9, 'Connie': 4, 'Dylan': 8, 'Barb': 3}
+2025-02-02 19:48:13.514 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:48:14.508 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Avery'}
+2025-02-02 19:48:14.516 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'This game is taking too long...', 'author': 'Avery'}
+2025-02-02 19:48:14.517 | INFO     | __main__:process_message:97 - Message received from author: Avery
+2025-02-02 19:48:14.518 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 8, 'Avery': 10, 'Connie': 4, 'Dylan': 8, 'Barb': 3}
+2025-02-02 19:48:14.519 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -0.225, Subjectivity: 0.4
+2025-02-02 19:48:15.514 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:48:15.522 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:48:15.522 | INFO     | __main__:process_message:97 - Message received from author: Dylan
+2025-02-02 19:48:15.523 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 8, 'Avery': 10, 'Connie': 4, 'Dylan': 9, 'Barb': 3}
+2025-02-02 19:48:15.524 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -0.7, Subjectivity: 0.7
+2025-02-02 19:48:16.519 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Erin'}
+2025-02-02 19:48:16.526 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': "That's a winner!", 'author': 'Erin'}
+2025-02-02 19:48:16.526 | INFO     | __main__:process_message:97 - Message received from author: Erin
+2025-02-02 19:48:16.527 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 9, 'Avery': 10, 'Connie': 4, 'Dylan': 9, 'Barb': 3}
+2025-02-02 19:48:16.528 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:48:17.524 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Connie'}
+2025-02-02 19:48:17.532 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'The ref made a bad call!!', 'author': 'Connie'}
+2025-02-02 19:48:17.532 | INFO     | __main__:process_message:97 - Message received from author: Connie
+2025-02-02 19:48:17.533 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 9, 'Avery': 10, 'Connie': 5, 'Dylan': 9, 'Barb': 3}
+2025-02-02 19:48:17.535 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -1.0, Subjectivity: 0.6666666666666666
+2025-02-02 19:48:18.528 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Barb'}
+2025-02-02 19:48:18.531 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'The defense is playing well!', 'author': 'Barb'}
+2025-02-02 19:48:18.531 | INFO     | __main__:process_message:97 - Message received from author: Barb
+2025-02-02 19:48:18.531 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 9, 'Avery': 10, 'Connie': 5, 'Dylan': 9, 'Barb': 4}
+2025-02-02 19:48:18.532 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:48:19.531 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:48:19.539 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:48:19.539 | INFO     | __main__:process_message:97 - Message received from author: Avery
+2025-02-02 19:48:19.540 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 9, 'Avery': 11, 'Connie': 5, 'Dylan': 9, 'Barb': 4}
+2025-02-02 19:48:19.542 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: -0.7, Subjectivity: 0.7
+2025-02-02 19:48:20.536 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Dylan'}
+2025-02-02 19:48:20.543 | INFO     | __main__:process_message:91 - Processed JSON message: {'message': 'He almost has a double double!', 'author': 'Dylan'}
+2025-02-02 19:48:20.544 | INFO     | __main__:process_message:97 - Message received from author: Dylan
+2025-02-02 19:48:20.545 | INFO     | __main__:process_message:103 - Updated author counts: {'Erin': 9, 'Avery': 11, 'Connie': 5, 'Dylan': 10, 'Barb': 4}
+2025-02-02 19:48:20.546 | INFO     | __main__:process_message:108 - Sentiment analysis - Polarity: 0.0, Subjectivity: 0.0
+2025-02-02 19:48:20.884 | WARNING  | __main__:main:173 - Producer interrupted by user.
+2025-02-02 19:48:20.886 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-02-02 19:48:20.887 | INFO     | __main__:main:180 - END producer.
+2025-02-02 19:48:22.623 | WARNING  | __main__:main:151 - Consumer interrupted by user.
+2025-02-02 19:48:22.638 | INFO     | __main__:main:156 - Kafka consumer for topic 'buzzline_json' closed.
+2025-02-02 19:48:22.639 | INFO     | __main__:main:158 - END consumer for topic 'buzzline_json' and group 'buzz_group'.
