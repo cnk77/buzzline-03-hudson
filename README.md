@@ -107,6 +107,77 @@ You will need to:
 What did we name the topic used with csv data? 
 Hint: See the consumer code and [.env](.env).
 
+## Custom JSON Producer
+
+In VS Code, open a terminal.
+Use the commands below to activate .venv, and start the producer. 
+
+Windows:
+
+```shell
+.venv\Scripts\activate
+py -m producers.json_producer_hudson
+```
+
+Mac/Linux:
+```zsh
+source .venv/bin/activate
+python3 -m producers.json_producer_hudson
+```
+## Custom JSON Consumer
+
+This custom consumer includes a sentiment analysis for each logged message as well as the author count.
+
+In VS Code, open a NEW terminal in your root project folder. 
+Use the commands below to activate .venv, and start the consumer. 
+
+Windows:
+```shell
+.venv\Scripts\activate
+py -m consumers.json_consumer_hudson
+```
+
+Mac/Linux:
+```zsh
+source .venv/bin/activate
+python3 -m consumers.json_consumer_hudson
+
+## Custom csv Producer
+
+In VS Code, open a terminal.
+Use the commands below to activate .venv, and start the producer. 
+
+Windows:
+
+```shell
+.venv\Scripts\activate
+py -m producers.csv_producer_hudson
+```
+
+Mac/Linux:
+```zsh
+source .venv/bin/activate
+python3 -m producers.csv_producer_hudson
+```
+
+## Custom csv Consumer
+
+This custom consumer adds a temperature alarm at 205F in addition to the stall detection.
+
+In VS Code, open a NEW terminal in your root project folder. 
+Use the commands below to activate .venv, and start the consumer. 
+
+Windows:
+```shell
+.venv\Scripts\activate
+py -m consumers.csv_consumer_hudson
+```
+
+Mac/Linux:
+```zsh
+source .venv/bin/activate
+python3 -m consumers.csv_consumer_hudson
+```
 ## About the Smart Smoker (CSV Example)
 
 A food stall occurs when the internal temperature of food plateaus or 
