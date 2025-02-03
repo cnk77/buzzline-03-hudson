@@ -988,3 +988,45 @@ e'}
 2025-02-02 16:24:38.406 | WARNING  | __main__:main:170 - Producer interrupted by user.
 2025-02-02 16:24:38.409 | INFO     | __main__:main:175 - Kafka producer closed.
 2025-02-02 16:24:38.409 | INFO     | __main__:main:177 - END producer.
+2025-02-02 19:24:17.149 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-02 19:24:17.152 | INFO     | __main__:<module>:68 - Project root: C:\Projects\buzzline-03-hudson
+2025-02-02 19:24:17.152 | INFO     | __main__:<module>:72 - Data folder: C:\Projects\buzzline-03-hudson\data
+2025-02-02 19:24:17.152 | INFO     | __main__:<module>:76 - Data file: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:24:17.152 | INFO     | __main__:main:136 - START producer.
+2025-02-02 19:24:17.152 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-02-02 19:24:17.164 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-02-02 19:24:17.165 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:24:17.510 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1001, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'MrCJePsSR6y2EeoYvAzI-A', 'controller_id': 1001}
+2025-02-02 19:24:17.511 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-02-02 19:24:17.512 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-02-02 19:24:17.514 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:24:17.515 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-02-02 19:24:17.627 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-02-02 19:24:17.628 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:24:17.958 | INFO     | utils.utils_producer:create_kafka_topic:176 - Creating 'buzzline_json'.
+2025-02-02 19:24:18.301 | INFO     | utils.utils_producer:create_kafka_topic:181 - Topic 'buzzline_json' created successfully.
+2025-02-02 19:24:18.302 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-02-02 19:24:18.303 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-02-02 19:24:18.303 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:24:18.313 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Projects\buzzline-03-hudson\data\buzzKRH.json
+2025-02-02 19:24:18.325 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Erin'}
+2025-02-02 19:24:19.328 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I hope the Tigers win!', 'author': 'Avery'}
+2025-02-02 19:24:20.331 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The defense is playing well!', 'author': 'Connie'}
+2025-02-02 19:24:21.335 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Avery'}
+2025-02-02 19:24:22.338 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I hope the Tigers win!', 'author': 'Dylan'}
+2025-02-02 19:24:23.342 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:24:24.345 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I like this coach!', 'author': 'Dylan'}
+2025-02-02 19:24:25.348 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:24:26.352 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Erin'}
+2025-02-02 19:24:27.355 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Avery'}
+2025-02-02 19:24:28.356 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is boring.', 'author': 'Dylan'}
+2025-02-02 19:24:29.359 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Dylan'}
+2025-02-02 19:24:30.362 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'He almost has a double double!', 'author': 'Connie'}
+2025-02-02 19:24:31.365 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The ref made a bad call!!', 'author': 'Barb'}
+2025-02-02 19:24:32.369 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Barb'}
+2025-02-02 19:24:33.372 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This game is taking too long...', 'author': 'Erin'}
+2025-02-02 19:24:34.375 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': "That's a winner!", 'author': 'Erin'}
+2025-02-02 19:24:35.378 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'What a shot!', 'author': 'Avery'}
+2025-02-02 19:24:36.103 | WARNING  | __main__:main:173 - Producer interrupted by user.
+2025-02-02 19:24:36.106 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-02-02 19:24:36.107 | INFO     | __main__:main:180 - END producer.
