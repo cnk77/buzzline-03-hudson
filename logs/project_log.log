@@ -1789,3 +1789,70 @@ e'}
 2025-02-02 19:48:22.623 | WARNING  | __main__:main:151 - Consumer interrupted by user.
 2025-02-02 19:48:22.638 | INFO     | __main__:main:156 - Kafka consumer for topic 'buzzline_json' closed.
 2025-02-02 19:48:22.639 | INFO     | __main__:main:158 - END consumer for topic 'buzzline_json' and group 'buzz_group'.
+2025-02-02 19:55:50.849 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-02 19:55:50.852 | INFO     | __main__:<module>:66 - Project root: C:\Projects\buzzline-03-hudson
+2025-02-02 19:55:50.852 | INFO     | __main__:<module>:70 - Data folder: C:\Projects\buzzline-03-hudson\data
+2025-02-02 19:55:50.852 | INFO     | __main__:<module>:74 - Data file: C:\Projects\buzzline-03-hudson\data\smoker_temps.csv
+2025-02-02 19:55:50.852 | INFO     | __main__:main:134 - START producer.
+2025-02-02 19:55:50.853 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-02-02 19:55:50.859 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-02-02 19:55:50.859 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:55:51.195 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1001, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'MrCJePsSR6y2EeoYvAzI-A', 'controller_id': 1001}
+2025-02-02 19:55:51.195 | INFO     | __main__:get_kafka_topic:48 - Kafka topic: smoker_csv
+2025-02-02 19:55:51.196 | INFO     | __main__:get_message_interval:55 - Message interval: 5 seconds
+2025-02-02 19:55:51.198 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:55:51.198 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-02-02 19:55:51.309 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-02-02 19:55:51.310 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 19:55:51.649 | INFO     | utils.utils_producer:create_kafka_topic:176 - Creating 'smoker_csv'.
+2025-02-02 19:55:51.747 | INFO     | utils.utils_producer:create_kafka_topic:181 - Topic 'smoker_csv' created successfully.
+2025-02-02 19:55:51.748 | INFO     | __main__:main:157 - Kafka topic 'smoker_csv' is ready.
+2025-02-02 19:55:51.748 | INFO     | __main__:main:163 - Starting message production to topic 'smoker_csv'...
+2025-02-02 19:55:51.748 | INFO     | __main__:generate_messages:93 - Opening data file in read mode: C:\Projects\buzzline-03-hudson\data\smoker_temps.csv
+2025-02-02 19:55:51.760 | INFO     | __main__:generate_messages:95 - Reading data from file: C:\Projects\buzzline-03-hudson\data\smoker_temps.csv
+2025-02-02 19:55:51.767 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T01:55:51.761700', 'temperature': 70.4}
+2025-02-02 19:55:56.769 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T01:55:56.768866', 'temperature': 70.8}
+2025-02-02 19:56:01.772 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T01:56:01.772111', 'temperature': 71.2}
+2025-02-02 19:56:06.775 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T01:56:06.774691', 'temperature': 71.6}
+2025-02-02 19:56:11.777 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T01:56:11.777670', 'temperature': 72.0}
+2025-02-02 19:56:16.780 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T01:56:16.779326', 'temperature': 72.4}
+2025-02-02 19:56:21.782 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T01:56:21.782226', 'temperature': 72.8}
+2025-02-02 19:56:26.785 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T01:56:26.784964', 'temperature': 73.2}
+2025-02-02 19:56:31.789 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T01:56:31.788565', 'temperature': 73.6}
+2025-02-02 19:56:36.792 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T01:56:36.791297', 'temperature': 74.0}
+2025-02-02 19:56:41.726 | WARNING  | __main__:main:170 - Producer interrupted by user.
+2025-02-02 19:56:41.729 | INFO     | __main__:main:175 - Kafka producer closed.
+2025-02-02 19:56:41.730 | INFO     | __main__:main:177 - END producer.
+2025-02-02 20:13:10.874 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-02 20:13:10.882 | INFO     | __main__:<module>:66 - Project root: C:\Projects\buzzline-03-hudson
+2025-02-02 20:13:10.882 | INFO     | __main__:<module>:70 - Data folder: C:\Projects\buzzline-03-hudson\data
+2025-02-02 20:13:10.883 | INFO     | __main__:<module>:74 - Data file: C:\Projects\buzzline-03-hudson\data\smoker_tempsKRH.csv
+2025-02-02 20:13:10.883 | INFO     | __main__:main:134 - START producer.
+2025-02-02 20:13:10.884 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-02-02 20:13:10.896 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-02-02 20:13:10.897 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 20:13:11.222 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1001, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'MrCJePsSR6y2EeoYvAzI-A', 'controller_id': 1001}
+2025-02-02 20:13:11.223 | INFO     | __main__:get_kafka_topic:48 - Kafka topic: smoker_csv
+2025-02-02 20:13:11.223 | INFO     | __main__:get_message_interval:55 - Message interval: 5 seconds
+2025-02-02 20:13:11.224 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 20:13:11.224 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-02-02 20:13:11.330 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-02-02 20:13:11.331 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 20:13:11.653 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'smoker_csv' already exists. Clearing it out...
+2025-02-02 20:13:11.654 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-02 20:13:11.986 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'smoker_csv': list indices must be integers or slices, not ConfigResource
+2025-02-02 20:13:11.987 | INFO     | __main__:main:157 - Kafka topic 'smoker_csv' is ready.
+2025-02-02 20:13:11.988 | INFO     | __main__:main:163 - Starting message production to topic 'smoker_csv'...
+2025-02-02 20:13:11.988 | INFO     | __main__:generate_messages:93 - Opening data file in read mode: C:\Projects\buzzline-03-hudson\data\smoker_tempsKRH.csv
+2025-02-02 20:13:11.997 | INFO     | __main__:generate_messages:95 - Reading data from file: C:\Projects\buzzline-03-hudson\data\smoker_tempsKRH.csv
+2025-02-02 20:13:11.999 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T02:13:11.998817', 'temperature': 70.4}
+2025-02-02 20:13:17.003 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T02:13:17.002262', 'temperature': 70.8}
+2025-02-02 20:13:22.004 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T02:13:22.004367', 'temperature': 71.2}
+2025-02-02 20:13:27.007 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T02:13:27.006619', 'temperature': 71.6}
+2025-02-02 20:13:32.009 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T02:13:32.008715', 'temperature': 72.0}
+2025-02-02 20:13:37.011 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T02:13:37.010881', 'temperature': 72.4}
+2025-02-02 20:13:42.013 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T02:13:42.013816', 'temperature': 72.8}
+2025-02-02 20:13:47.016 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-03T02:13:47.015865', 'temperature': 73.2}
+2025-02-02 20:13:47.521 | WARNING  | __main__:main:170 - Producer interrupted by user.
+2025-02-02 20:13:47.522 | INFO     | __main__:main:175 - Kafka producer closed.
+2025-02-02 20:13:47.523 | INFO     | __main__:main:177 - END producer.
